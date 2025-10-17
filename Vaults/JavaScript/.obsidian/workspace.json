@@ -11,10 +11,14 @@
             "id": "639894fefd7ff78a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Metodos/Math.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Math"
             }
           }
         ]
@@ -164,8 +168,25 @@
   },
   "active": "639894fefd7ff78a",
   "lastOpenFiles": [
-    "test.md",
+    "Conceptos/Ordenar.md",
+    "Metodos/Math.md",
+    "Conceptos/Operadores Ternarios.md",
+    "Conceptos/Casting.md",
     "Metodos/Strings.md",
+    "Metodos/Set.md",
+    "Metodos/Map.md",
+    "Metodos/Array.md",
+    "Metodos/Number.md",
+    "Aimar Metodos/RA1/persistenciaMultiplicativa.md",
+    "Aimar Metodos/RA1/repeticionesNumero.md",
+    "Aimar Metodos/RA1/Sudoku.md",
+    "Aimar Metodos/RA1/Teorema Langrage.md",
+    "Aimar Metodos/RA1/Triangulo RGB.md",
+    "Aimar Metodos/RA1/contarVocales.md",
+    "Aimar Metodos/RA1/comprobarPin.md",
+    "Aimar Metodos/RA1/arrayDiff.md",
+    "Aimar Metodos/RA1/decimalToBinary.md",
+    "test.md",
     "DIBUJOS.md"
   ]
 }
