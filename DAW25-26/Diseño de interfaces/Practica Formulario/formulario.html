@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aimar Merodo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="zona">
+    <form class="caja" action="#" method="post">
+      <h1 class="tit">Formulario de inicio de sesion</h1>
+      <p class="sub">Adopta un animal</p>
+
+      <div class="fila">
+        <label for="correo">Correo</label>
+        <input id="correo" name="correo" type="email" placeholder="Correo Electronico" required>
+      </div>
+
+      <div class="fila">
+        <label for="Contraseña">Contraseña</label>
+        <input id="Contraseña" name="Contraseña" type="text" placeholder="Contraseña" required minlength="6" maxlength="32">
+      </div>
+
+      <fieldset class="grupo">
+        <legend>Tipo de usuario</legend>
+        <label class="op">
+          <input type="radio" name="rol" value="adoptante" required>
+          <span>Adoptante</span>
+        </label>
+        <label class="op">
+          <input type="radio" name="rol" value="acogida">
+          <span>Casa de acogida</span>
+        </label>
+        <label class="op">
+          <input type="radio" name="rol" value="protectora">
+          <span>Protectora</span>
+        </label>
+        <label class="op">
+          <input type="radio" name="rol" value="veterinario">
+          <span>Veterinario</span>
+        </label>
+      </fieldset>
+
+      <fieldset class="grupo">
+        <legend>Preferencias</legend>
+        <label class="op">
+          <input type="checkbox" name="pref[]" value="perros">
+          <span>Perros</span>
+        </label>
+        <label class="op">
+          <input type="checkbox" name="pref[]" value="gatos">
+          <span>Gatos</span>
+        </label>
+        <label class="op">
+          <input type="checkbox" name="pref[]" value="otros">
+          <span>Otros</span>
+        </label>
+      </fieldset>
+
+      <div class="fila">
+        <label for="edad">Edad</label>
+        <input id="edad" name="edad" type="text" placeholder="Edad" required maxlength="2" pattern="^(1[89]|[2-5][0-9]|6[0-5])$">
+      </div>
+
+      <div class="fila">
+        <label for="nombre">Nombre y apellidos</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Nombre" required maxlength="60" pattern="^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ\s]+$">
+      </div>
+
+      <div class="fila">
+        <label for="dni">DNI</label>
+        <input id="dni" name="dni" class="mayus" type="text" placeholder="DNI" required maxlength="9" pattern="^[0-9]{8}[TRWAGMYFPDXBNJZSQVHLCKEtrwagmyfpdxbnjzsqvhlcke]$">
+      </div>
+
+      <label class="rec">
+        <input type="checkbox" name="recordar" value="si">
+        <span>Recordar</span>
+      </label>
+
+      <div class="botonera">
+        <button type="submit">Registrar</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

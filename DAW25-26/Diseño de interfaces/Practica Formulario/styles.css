@@ -1,0 +1,129 @@
+:root{
+  --colorFondoUno:#0f1115;
+  --colorCajaUno:#151821;
+  --colorTintaUno:#e9e9ee;
+  --colorTintaDos:#a6a9b2;
+  --colorBordeUno:#2a2d36;
+  --colorMarcaUno:#66b3a6;
+  --radioUno:10px;
+  --espacioUno:14px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--colorFondoUno);
+  color: var(--colorTintaUno);
+}
+
+.zona{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+.caja{
+  width:min(460px, 94vw);
+  background: var(--colorCajaUno);
+  border:1px solid var(--colorBordeUno);
+  border-radius: var(--radioUno);
+  padding:20px;
+}
+
+.tit{
+  margin:0 0 6px 0;
+  font-size:1.4rem;
+}
+.sub{
+  margin:0 0 var(--espacioUno) 0;
+  color: var(--colorTintaDos);
+  font-size:.95rem;
+}
+
+.fila{
+  display:grid;
+  gap:6px;
+  margin: var(--espacioUno) 0;
+}
+
+label{font-weight:600; font-size:.98rem}
+
+input[type="email"],
+input[type="text"]{
+  width:100%;
+  padding:10px 12px;
+  border:1px solid var(--colorBordeUno);
+  border-radius: var(--radioUno);
+  background:#0f1218;
+  color: var(--colorTintaUno);
+  font-size:1rem;
+  outline:none;
+}
+
+input::placeholder{color:#8f94a3}
+
+.mayus{text-transform:uppercase}
+
+.grupo{
+  margin: var(--espacioUno) 0;
+  border:1px solid var(--colorBordeUno);
+  border-radius: var(--radioUno);
+  padding:10px;
+}
+
+legend{
+  padding:0 4px;
+  color: var(--colorTintaDos);
+  font-size:.95rem;
+}
+
+.op{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin:6px 12px 6px 0;
+}
+
+.op input{
+  width:16px;
+  height:16px;
+  accent-color: var(--colorMarcaUno);
+}
+
+.rec{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-top:6px;
+}
+
+.rec input{
+  width:16px;
+  height:16px;
+  accent-color: var(--colorMarcaUno);
+}
+
+.botonera{
+  display:flex;
+  gap:8px;
+  justify-content:flex-end;
+  margin-top: var(--espacioUno);
+}
+
+button{
+  appearance:none;
+  border:1px solid var(--colorBordeUno);
+  background:#1b1f2a;
+  color:#ffffff;
+  padding:10px 14px;
+  border-radius: var(--radioUno);
+  font-weight:700;
+  cursor:pointer;
+}
+
+button.sec{
+  background:#0f1218;
+}
