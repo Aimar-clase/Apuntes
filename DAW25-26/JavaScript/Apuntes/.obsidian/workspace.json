@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "b6e733900a19af57",
+    "id": "fa271b46a11a5b8c",
     "type": "split",
     "children": [
       {
-        "id": "dee86f10117fb226",
+        "id": "732310dbfb1a9520",
         "type": "tabs",
         "children": [
           {
-            "id": "2dca3049a5271887",
+            "id": "68e8eb8f4a843729",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Apuntes/JavaScript/DIBUJOS.md",
+                "file": "DIBUJOS.md",
                 "mode": "source",
                 "source": false
               },
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "d0baf1ff0f786812",
+    "id": "d58789c7e544870d",
     "type": "split",
     "children": [
       {
-        "id": "549fad2d22196bba",
+        "id": "a4e8052df38768a1",
         "type": "tabs",
         "children": [
           {
-            "id": "6aa666f42b578b1e",
+            "id": "5664990fb0a959a0",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "2f32d2f2e6ae1ee2",
+            "id": "96aec8e6edcc47e1",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "037dd025f17b6d91",
+            "id": "76f4a7f74a8b8f07",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,20 +81,19 @@
     "width": 300
   },
   "right": {
-    "id": "5db03192e372f803",
+    "id": "9b156efcfa98e2d4",
     "type": "split",
     "children": [
       {
-        "id": "612f7fa797b44119",
+        "id": "59ff39487ab89d11",
         "type": "tabs",
         "children": [
           {
-            "id": "27a6f66c83b50cac",
+            "id": "6a04261b4ccdbae0",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Apuntes/JavaScript/DIBUJOS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +103,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for DIBUJOS"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "48bd98094d6de669",
+            "id": "7ffcc802c92db5da",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Apuntes/JavaScript/DIBUJOS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from DIBUJOS"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "da02a1bcccdbd002",
+            "id": "c52b90e34622c172",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,18 +135,17 @@
             }
           },
           {
-            "id": "2373a88e6baa72d6",
+            "id": "559d1a9649c3e815",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Apuntes/JavaScript/DIBUJOS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of DIBUJOS"
+              "title": "Outline"
             }
           }
         ]
@@ -169,25 +166,6 @@
       "bases:Create new base": false
     }
   },
-  "active": "2dca3049a5271887",
-  "lastOpenFiles": [
-    "Apuntes/JavaScript/Metodos/Strings.md",
-    "Apuntes/JavaScript/DIBUJOS.md",
-    "Apuntes/JavaScript/Metodos/Array.md",
-    "Apuntes/JavaScript/Metodos/Map.md",
-    "Apuntes/JavaScript/Conceptos/Casting.md",
-    "Apuntes/JavaScript/Aimar Metodos/RA1/Triangulo RGB.md",
-    "Apuntes/JavaScript/Aimar Metodos/RA1/Teorema Langrage.md",
-    "Apuntes/JavaScript/Aimar Metodos/RA1/Sudoku.md",
-    "Apuntes/JavaScript/Aimar Metodos/RA1/repeticionesNumero.md",
-    "Apuntes/JavaScript/Aimar Metodos/RA1/repeticionesImpares.md",
-    "Apuntes/JavaScript/Aimar Metodos/RA1/persistenciaMultiplicativa.md",
-    "Apuntes/JavaScript/Aimar Metodos/RA1/ordenarDecenciente.md",
-    "Apuntes/JavaScript/Aimar Metodos/RA1/noRepetidos.md",
-    "Apuntes/JavaScript/Aimar Metodos/RA1/DividirArrayEnTres.md",
-    "Apuntes/JavaScript/Aimar Metodos/RA1/decimalToBinary.md",
-    "Apuntes/JavaScript/Aimar Metodos/RA1/contarVocales.md",
-    "Apuntes/JavaScript/Aimar Metodos/RA1/comprobarPin.md",
-    "Apuntes/JavaScript/Aimar Metodos/RA1/arrayDiff.md"
-  ]
+  "active": "68e8eb8f4a843729",
+  "lastOpenFiles": []
 }
