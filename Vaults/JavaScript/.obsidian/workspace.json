@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Metodos/Number.md",
+                "file": "Metodos/Array.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Number"
+              "title": "Array"
             }
           }
         ]
@@ -168,19 +168,20 @@
   },
   "active": "639894fefd7ff78a",
   "lastOpenFiles": [
+    "Metodos/Map.md",
+    "DIBUJOS.md",
     "Conceptos/Casting.md",
+    "Metodos/Array.md",
+    "Metodos/Number.md",
     "Conceptos/Bucles.md",
     "Aimar Metodos/RA1/DividirArrayEnTres.md",
     "Aimar Metodos/RA1/contarVocales.md",
     "Aimar Metodos/RA1/arrayDiff.md",
     "Conceptos/Operadores Ternarios.md",
     "Conceptos/Ordenar.md",
-    "Metodos/Map.md",
     "Metodos/Math.md",
-    "Metodos/Number.md",
     "Metodos/Strings.md",
     "Metodos/Set.md",
-    "Metodos/Array.md",
     "Aimar Metodos/RA1/noRepetidos.md",
     "Aimar Metodos/RA1/persistenciaMultiplicativa.md",
     "Aimar Metodos/RA1/repeticionesNumero.md",
@@ -189,7 +190,6 @@
     "Aimar Metodos/RA1/Triangulo RGB.md",
     "Aimar Metodos/RA1/comprobarPin.md",
     "Aimar Metodos/RA1/decimalToBinary.md",
-    "test.md",
-    "DIBUJOS.md"
+    "test.md"
   ]
 }

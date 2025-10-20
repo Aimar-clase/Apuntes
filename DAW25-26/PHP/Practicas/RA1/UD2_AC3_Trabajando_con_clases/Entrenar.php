@@ -1,7 +1,4 @@
 <?php
-require 'Hobby.php';
-require 'Acciones.php';
-require 'ayuda.php';
 
 class Entrenar extends Hobby implements Acciones {
     private $nombre;
@@ -18,6 +15,7 @@ class Entrenar extends Hobby implements Acciones {
         $this->tiempo = $tiempo;
         $this->fechaFinalizacion = $fechaCreacion;
         $this->ayuda = new Ayuda(); 
+        self::$totalEntrenamientos++;
     }
 
     public function __destruct(){
@@ -31,6 +29,32 @@ class Entrenar extends Hobby implements Acciones {
         ."Tiempo: " .$this->tiempo
         ." Fecha: " .$this->fechaFinalizacion;
     }
+
+    // get de la variable constante Y statica
+    public static function getEjercicioMinimo() {
+        return self::ejercicioMinimoSemanal;
+    }
+
+    public static function getTotalEntrenamientos() {
+        return self::$totalEntrenamientos;
+    }
+
+        
+    public static function setTotalEntrenamientos($valor) {
+        self::$totalEntrenamientos = $valor;
+    }
+
+    
+    public static function incrementarTotal() {
+        self::$totalEntrenamientos++;
+    }
+
+    
+    public static function resetearTotal() {
+        self::$totalEntrenamientos = 0;
+    }
+
+
 
     public static function aleatorio() {
         $a = new Ayuda();
