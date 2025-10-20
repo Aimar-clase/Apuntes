@@ -17,7 +17,7 @@
             <div class="d-flex align-items-center justify-content-between w-100">
                 <!-- Logo -->
                 <div class="navbar-brand-custom">
-                    <img src="/images/logos/logo.png" alt="Logo" class="logo-img">
+                    <img src="images/logos/logo.png" alt="Logo" class="logo-img">
                 </div>
                 <!-- Links Centrados -->
                 <div class="navbar-links-center">
@@ -94,7 +94,7 @@
                 <!-- Columna Derecha -->
                 <div class="col-lg-6">
                     <div class="right-content">
-                        <img src="/images/minecraft.png" 
+                        <img src="images/minecraft.png" 
                              alt="Minecraft" 
                              class="minecraft-image">
                     </div>
@@ -108,14 +108,16 @@
     <div class="simple-divider"></div>
 
     <!-- Plans Section -->
-    <section class="plans-section">
-        <div class="container">
-            <h2 class="section-title">Elige tu <span>Plan</span></h2>
-            <div class="row g-4 justify-content-center">
-                
-                <!-- Plan Básico -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="plan-card">
+<!-- Plans Section -->
+<section class="plans-section">
+    <div class="container">
+        <h2 class="section-title">Elige tu <span>Plan</span></h2>
+        <div class="row g-4 justify-content-center">
+            
+            <!-- Plan Básico -->
+            <div class="col-lg-4 col-md-6">
+                <div class="plan-card">
+                    <div class="plan-card__content">
                         <div class="plan-header">
                             <h3>Básico</h3>
                             <div class="plan-price">
@@ -142,14 +144,20 @@
                                 <span>Backup Semanal</span>
                             </div>
                         </div>
-                        <button class="btn-plan">Comenzar</button>
+                        <button class="btn-plan">
+                            <div>
+                                <span>Comenzar</span>
+                            </div>
+                        </button>
                     </div>
                 </div>
+            </div>
 
-                <!-- Plan Pro -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="plan-card plan-featured">
-                        <div class="featured-badge">Recomendado</div>
+            <!-- Plan Pro -->
+            <div class="col-lg-4 col-md-6">
+                <div class="plan-card plan-featured" style="position: relative;">
+                    <div class="featured-badge">Recomendado</div>
+                    <div class="plan-card__content">
                         <div class="plan-header">
                             <h3>Pro</h3>
                             <div class="plan-price">
@@ -180,13 +188,18 @@
                                 <span>Panel Avanzado</span>
                             </div>
                         </div>
-                        <button class="btn-plan btn-plan-featured">Comenzar</button>
+                        <button class="btn-plan">
+                            <div>
+                                <span>Comenzar</span>
+                            </div>
+                        </button>
                     </div>
                 </div>
-
             </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
 </body>
 </html>
