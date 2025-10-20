@@ -3,33 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web</title>
-    
+    <title>Adquiere Minecraft</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="global.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-primary">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-orange">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="Images/logos/logo.png" alt="Logo" height="100">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+<body>
     
+    <!-- Navbar -->
+    <nav class="navbar navbar-custom">
+        <div class="container-fluid px-4">
+            <div class="d-flex align-items-center justify-content-between w-100">
+                <!-- Logo -->
+                <div class="navbar-brand-custom">
+                    <img src="/images/logos/logo.png" alt="Logo" class="logo-img">
+                </div>
+                <!-- Links Centrados -->
+                <div class="navbar-links-center">
+                    <span class="nav-link-custom">Inicio</span>
+                    <span class="nav-link-custom">Productos</span>
+                    <span class="nav-link-custom">Carrito</span>
+                    <span class="nav-link-custom">Contacto</span>
+                </div>
+                <!-- Espacio derecho (para mantener balance) -->
+                <div class="navbar-spacer"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                
+                <!-- Columna Izquierda -->
+                <div class="col-lg-6">
+                    <div class="left-content">
+                        <h1 class="mb-4">ADQUIERE<br><span>MINECRAFT</span></h1>
+                        
+                        <div class="requirements-grid">
+                            <div class="requirement-card">
+                                <i class="fas fa-hard-drive requirement-icon"></i>
+                                <p>Disco Duro SSD</p>
+                            </div>
+                            <div class="requirement-card">
+                                <i class="fas fa-microchip requirement-icon"></i>
+                                <p>Intel Core i7</p>
+                            </div>
+                            <div class="requirement-card">
+                                <i class="fas fa-memory requirement-icon"></i>
+                                <p>16GB RAM</p>
+                            </div>
+                            <div class="requirement-card">
+                                <i class="fas fa-desktop requirement-icon"></i>
+                                <p>GPU GTX 1060+</p>
+                            </div>
+                            <div class="requirement-card">
+                                <i class="fas fa-wifi requirement-icon"></i>
+                                <p>Conexión Estable</p>
+                            </div>
+                            <div class="requirement-card">
+                                <i class="fab fa-windows requirement-icon"></i>
+                                <p>Windows 10/11</p>
+                            </div>
+                            <div class="requirement-card">
+                                <i class="fas fa-bolt requirement-icon"></i>
+                                <p>Optimización Alta</p>
+                            </div>
+                            <div class="requirement-card">
+                                <i class="fas fa-puzzle-piece requirement-icon"></i>
+                                <p>Soporte Mods</p>
+                            </div>
+                            <div class="requirement-card">
+                                <i class="fas fa-sliders-h requirement-icon"></i>
+                                <p>Panel Control</p>
+                            </div>
+                            <div class="requirement-card">
+                                <i class="fas fa-cloud-upload-alt requirement-icon"></i>
+                                <p>Backup Diario</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button class="btn btn-details">Ver Servidores</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha -->
+                <div class="col-lg-6">
+                    <div class="right-content">
+                        <img src="/images/minecraft.png" 
+                             alt="Minecraft" 
+                             class="minecraft-image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Separador simple -->
+    <div class="simple-divider"></div>
+
+    <!-- Plans Section -->
+    <section class="plans-section">
+        <div class="container">
+            <h2 class="section-title">Elige tu <span>Plan</span></h2>
+            <div class="row g-4 justify-content-center">
+                
+                <!-- Plan Básico -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h3>Básico</h3>
+                            <div class="plan-price">
+                                <span class="currency">€</span>
+                                <span class="amount">20</span>
+                                <span class="period">/mes</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>8GB RAM DDR4</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>20GB SSD NVMe</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Soporte 24/7</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Backup Semanal</span>
+                            </div>
+                        </div>
+                        <button class="btn-plan">Comenzar</button>
+                    </div>
+                </div>
+
+                <!-- Plan Pro -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="plan-card plan-featured">
+                        <div class="featured-badge">Recomendado</div>
+                        <div class="plan-header">
+                            <h3>Pro</h3>
+                            <div class="plan-price">
+                                <span class="currency">€</span>
+                                <span class="amount">30</span>
+                                <span class="period">/mes</span>
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>16GB RAM DDR4</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>40GB SSD NVMe</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Soporte Prioritario</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Backup Diario</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Panel Avanzado</span>
+                            </div>
+                        </div>
+                        <button class="btn-plan btn-plan-featured">Comenzar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
