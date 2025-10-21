@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 2 - Contador</title>
+</head>
+<body>
+    <h1>Contador de clics</h1>
+    <p>Has hecho clic <span id="contador">0</span> veces</p>
+    <button id="btnContar">¡Haz clic aquí!</button>
+    <button id="btnReset">Reiniciar</button>
+
+    <script>
+        let contador = 0;
+        let spanContador = document.getElementById('contador');
+        let botonContar = document.getElementById('btnContar');
+        let botonReset = document.getElementById('btnReset');
+        
+        botonContar.addEventListener('click', function() {
+            contador++;
+            spanContador.textContent = contador;
+        });
+        
+        botonReset.addEventListener('click', function() {
+            contador = 0;
+            spanContador.textContent = contador;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        input {
+            padding: 8px;
+            width: 70%;
+            font-size: 16px;
+        }
+        button {
+            padding: 8px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #f0f0f0;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi Lista de Tareas</h1>
+    <div>
+        <input type="text" id="tarea" placeholder="Escribe una tarea...">
+        <button id="addBtn">Añadir</button>
+    </div>
+    
+    <button id="delBtn">Borrar todas</button>
+    
+    <ul id="listaTareas">
+        
+    </ul>
+
+<script src="ejercicio1.js"></script>
+</body>
+</html>

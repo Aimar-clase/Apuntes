@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 1 - Cambiar color</title>
+</head>
+<body>
+    <h1>Cambiador de color</h1>
+    <button id="btnColor">Cambiar color de fondo</button>
+
+    <script>
+        let boton = document.getElementById('btnColor');
+        
+        boton.addEventListener('click', function() {
+            // Genera un color aleatorio
+            let colores = ['lightblue', 'lightgreen', 'lightyellow', 'lightpink', 'lightcoral'];
+            let colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+            
+            document.body.style.backgroundColor = colorAleatorio;
+        });
+    </script>
+</body>
+</html>
