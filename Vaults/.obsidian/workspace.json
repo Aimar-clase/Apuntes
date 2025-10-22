@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "ea6391610f6542b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "cf8608e1ca221d73",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "708d72ad9437bfb7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docker/10-comandos-cheatsheet/comandos-rapidos.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "comandos-rapidos"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a5034368f5af1942",
+    "type": "split",
+    "children": [
+      {
+        "id": "921a98a6df8805ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fe4943b118f06046",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "0f115d462b6c3155",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2a86b220fbb55528",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "aa07a79b25ed65ef",
+    "type": "split",
+    "children": [
+      {
+        "id": "fda9fa960f19892e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d85a83ab10df43e7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Docker/10-comandos-cheatsheet/comandos-rapidos.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for comandos-rapidos"
+            }
+          },
+          {
+            "id": "5417d6347b82d659",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Docker/10-comandos-cheatsheet/comandos-rapidos.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from comandos-rapidos"
+            }
+          },
+          {
+            "id": "23c6ac90ea9c7f64",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "1b50148c7bfddd33",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Docker/10-comandos-cheatsheet/comandos-rapidos.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of comandos-rapidos"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "708d72ad9437bfb7",
+  "lastOpenFiles": [
+    "Docker/01-fundamentos/conceptos-clave.md",
+    "Docker/01-fundamentos/arquitectura.md",
+    "Docker/README.md",
+    "Docker/recursos/troubleshooting.md",
+    "Docker/recursos/glosario.md",
+    "Docker/recursos/enlaces-utiles.md",
+    "Docker/recursos",
+    "Docker/10-comandos-cheatsheet/comandos-rapidos.md",
+    "Docker/10-comandos-cheatsheet",
+    "Docker/09-casos-practicos/proyecto-python/README.md",
+    "Docker/09-casos-practicos/proyecto-nodejs/README.md",
+    "Docker/09-casos-practicos/proyecto-microservicios/README.md",
+    "Docker/09-casos-practicos/proyecto-python",
+    "Docker/09-casos-practicos/proyecto-nodejs",
+    "Docker/09-casos-practicos/proyecto-microservicios",
+    "Docker/09-casos-practicos",
+    "Docker/08-avanzado/seguridad.md",
+    "Docker/08-avanzado/multi-stage-builds.md",
+    "Docker/08-avanzado/docker-swarm.md",
+    "Docker/08-avanzado/ci-cd.md",
+    "Docker/08-avanzado",
+    "Docker/07-docker-compose/ejemplos/stack-web/docker-compose.yml",
+    "Docker/07-docker-compose/ejemplos/stack-fullstack/docker-compose.yml",
+    "Docker/07-docker-compose/ejemplos/stack-web",
+    "Docker/07-docker-compose/sintaxis-yaml.md",
+    "Docker/07-docker-compose/introduccion.md",
+    "Docker/07-docker-compose/comandos.md",
+    "Docker/06-redes/tipos-redes.md",
+    "Docker/06-redes/puertos.md",
+    "Docker/06-redes/comunicacion-contenedores.md",
+    "Docker/05-volumenes/tipos-volumenes.md",
+    "Docker/05-volumenes/persistencia-datos.md",
+    "Docker/05-volumenes/bind-mounts.md",
+    "Docker/04-dockerfile/sintaxis-basica.md",
+    "Docker/04-dockerfile/mejores-practicas.md",
+    "Docker/04-dockerfile/instrucciones.md"
+  ]
+}
