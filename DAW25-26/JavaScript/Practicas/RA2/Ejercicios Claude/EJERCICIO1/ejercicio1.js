@@ -9,14 +9,25 @@ addBtn.addEventListener("click", function(){
         alert("NO PUEDE ESTAR VACIO");
     }else {
         let newLi = document.createElement("li");
+        newLi.style.display = "flex";
+        newLi.style.justifyContent = "space-between";
+        newLi.style.alignItems = "center";
         let removeTareaIndividual = document.createElement("button");
+        removeTareaIndividual.textContent  = "❌";
+        removeTareaIndividual.style.float = "right";
         let tareaTexto = document.createTextNode(inputTarea.value);
         newLi.appendChild(tareaTexto);
         listaTareas.appendChild(newLi);
         newLi.appendChild(removeTareaIndividual);
-        
         inputTarea.value = "";
+
+        removeTareaIndividual.addEventListener("click", function(){
+            removeTareaIndividual.parentElement.remove();
+        })
+
     }
+
+
 
 })
 

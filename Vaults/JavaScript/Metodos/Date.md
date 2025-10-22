@@ -1,20 +1,20 @@
-# 📅 Objeto Date en JavaScript
+# Objeto Date en JavaScript
 
-## 🤔 ¿Qué es Date?
+## ¿Qué es Date?
 
 `Date` es un objeto de JavaScript que permite trabajar con fechas y horas. Se ajusta automáticamente a la zona horaria del usuario.
 
 ---
 
-## 🆕 Crear una fecha
+## Crear una fecha
 
-### ⏰ Fecha actual
+### Fecha actual
 ```javascript
 let ahora = new Date();
 // Captura la fecha y hora actual del sistema
 ```
 
-### 📆 Fecha específica
+### Fecha específica
 ```javascript
 let fecha = new Date(2025, 0, 15); // 15 de enero de 2025
 // IMPORTANTE: Los meses van de 0 (enero) a 11 (diciembre)
@@ -23,7 +23,7 @@ let fechaCompleta = new Date(2025, 0, 15, 14, 30, 0);
 // Año, mes, día, hora, minutos, segundos
 ```
 
-### 📝 Desde un string
+### Desde un string
 ```javascript
 let fecha = new Date("2025-01-15");
 let fecha2 = new Date("January 15, 2025 14:30:00");
@@ -31,29 +31,29 @@ let fecha2 = new Date("January 15, 2025 14:30:00");
 
 ---
 
-## 🔍 Obtener información de una fecha
+## Obtener información de una fecha
 
-### 📊 Métodos básicos
+### Métodos básicos
 ```javascript
 let fecha = new Date();
 
-// 📅 Fecha
+// Fecha
 fecha.getFullYear();    // Año completo: 2025
 fecha.getMonth();       // Mes (0-11): 0 = enero, 11 = diciembre
 fecha.getDate();        // Día del mes (1-31)
 fecha.getDay();         // Día de la semana (0-6): 0 = domingo, 6 = sábado
 
-// ⏱️ Hora
+// Hora
 fecha.getHours();       // Horas (0-23)
 fecha.getMinutes();     // Minutos (0-59)
 fecha.getSeconds();     // Segundos (0-59)
 fecha.getMilliseconds(); // Milisegundos (0-999)
 
-// ⚡ Timestamp
+// Timestamp
 fecha.getTime();        // Milisegundos desde 1 enero 1970
 ```
 
-### 💡 Ejemplo práctico
+### Ejemplo práctico
 ```javascript
 let ahora = new Date();
 let dia = ahora.getDate();
@@ -65,30 +65,30 @@ console.log(`${dia}/${mes}/${año}`); // 22/10/2025
 
 ---
 
-## 🎨 Formatear fechas
+## Formatear fechas
 
-### 🌍 toLocaleString() - Fecha y hora local
+### toLocaleString() - Fecha y hora local
 ```javascript
 let fecha = new Date();
 fecha.toLocaleString(); 
 // "22/10/2025, 14:30:45" (formato según país del usuario)
 ```
 
-### 📅 toLocaleDateString() - Solo fecha
+### toLocaleDateString() - Solo fecha
 ```javascript
 let fecha = new Date();
 fecha.toLocaleDateString();
 // "22/10/2025"
 ```
 
-### ⏰ toLocaleTimeString() - Solo hora
+### toLocaleTimeString() - Solo hora
 ```javascript
 let fecha = new Date();
 fecha.toLocaleTimeString();
 // "14:30:45"
 ```
 
-### ✨ Personalizar formato
+### Personalizar formato
 ```javascript
 let fecha = new Date();
 let opciones = { 
@@ -103,33 +103,33 @@ fecha.toLocaleDateString('es-ES', opciones);
 
 ---
 
-## ✏️ Modificar fechas
+## Modificar fechas
 ```javascript
 let fecha = new Date();
 
-fecha.setFullYear(2026);    // 📆 Cambiar año
-fecha.setMonth(5);          // 📅 Cambiar mes (0-11)
-fecha.setDate(15);          // 🗓️ Cambiar día
-fecha.setHours(10);         // ⏰ Cambiar hora
-fecha.setMinutes(30);       // ⏱️ Cambiar minutos
-fecha.setSeconds(0);        // ⏲️ Cambiar segundos
+fecha.setFullYear(2026);    // Cambiar año
+fecha.setMonth(5);          // Cambiar mes (0-11)
+fecha.setDate(15);          // Cambiar día
+fecha.setHours(10);         // Cambiar hora
+fecha.setMinutes(30);       // Cambiar minutos
+fecha.setSeconds(0);        // Cambiar segundos
 ```
 
 ---
 
-## 🧮 Operaciones con fechas
+## Operaciones con fechas
 
-### ➕➖ Sumar/restar días
+### Sumar/restar días
 ```javascript
 let hoy = new Date();
 let mañana = new Date();
-mañana.setDate(hoy.getDate() + 1); // ➕ Sumar 1 día
+mañana.setDate(hoy.getDate() + 1); // Sumar 1 día
 
 let ayer = new Date();
-ayer.setDate(hoy.getDate() - 1); // ➖ Restar 1 día
+ayer.setDate(hoy.getDate() - 1); // Restar 1 día
 ```
 
-### 📏 Diferencia entre fechas
+### Diferencia entre fechas
 ```javascript
 let fecha1 = new Date("2025-01-01");
 let fecha2 = new Date("2025-01-15");
@@ -141,9 +141,9 @@ console.log(diasDiferencia); // 14 días
 
 ---
 
-## 🚀 Casos de uso comunes
+## Casos de uso comunes
 
-### 📌 Mostrar fecha actual formateada
+### Mostrar fecha actual formateada
 ```javascript
 let ahora = new Date();
 let dia = ahora.getDate().toString().padStart(2, '0');
@@ -156,19 +156,19 @@ console.log(`${dia}/${mes}/${año} ${hora}:${minutos}`);
 // "22/10/2025 14:30"
 ```
 
-### 🔮 Validar si una fecha es futura
+### Validar si una fecha es futura
 ```javascript
 let fechaEvento = new Date("2026-12-25");
 let hoy = new Date();
 
 if (fechaEvento > hoy) {
-    console.log("🎯 El evento es en el futuro");
+    console.log("El evento es en el futuro");
 } else {
-    console.log("⏮️ El evento ya pasó");
+    console.log("El evento ya pasó");
 }
 ```
 
-### 🎂 Calcular edad
+### Calcular edad
 ```javascript
 function calcularEdad(fechaNacimiento) {
     let hoy = new Date();
@@ -188,33 +188,33 @@ console.log(calcularEdad("2000-05-15")); // Edad calculada
 
 ---
 
-## 💡 Tips importantes
+## Tips importantes
 
-> [!warning] ⚠️ Meses empiezan en 0
+> [!warning] Meses empiezan en 0
 > En JavaScript, los meses van de **0 (enero) a 11 (diciembre)**. Siempre suma 1 al mostrar el mes.
 
-> [!tip] 🌐 Zona horaria
+> [!tip] Zona horaria
 > `Date` usa la zona horaria local del usuario. Para trabajar con UTC usa `getUTCFullYear()`, `getUTCMonth()`, etc.
 
-> [!info] ⚖️ Comparar fechas
+> [!info] Comparar fechas
 > Puedes comparar fechas directamente con `>`, `<`, `===` ya que internamente se comparan los timestamps.
 
 ---
 
-## ⚡ Métodos útiles rápidos
+## Métodos útiles rápidos
 
-| Método | Descripción | Emoji |
-|--------|-------------|-------|
-| `Date.now()` | Timestamp actual en milisegundos | ⏱️ |
-| `toISOString()` | Formato ISO: "2025-10-22T14:30:00.000Z" | 🌐 |
-| `toString()` | String legible: "Wed Oct 22 2025 14:30:00" | 📝 |
-| `valueOf()` | Igual que `getTime()` | 🔢 |
+| Método | Descripción |
+|--------|-------------|
+| `Date.now()` | Timestamp actual en milisegundos |
+| `toISOString()` | Formato ISO: "2025-10-22T14:30:00.000Z" |
+| `toString()` | String legible: "Wed Oct 22 2025 14:30:00" |
+| `valueOf()` | Igual que `getTime()` |
 
 ---
 
-## 🎯 Ejemplos prácticos para proyectos
+## Ejemplos prácticos para proyectos
 
-### 📜 Historial con fecha
+### Historial con fecha
 ```javascript
 let fecha = new Date();
 let registro = fecha.toLocaleString() + " - Usuario realizó una acción";
@@ -222,7 +222,7 @@ console.log(registro);
 // "22/10/2025, 14:30:45 - Usuario realizó una acción"
 ```
 
-### ⏳ Temporizador cuenta atrás
+### Temporizador cuenta atrás
 ```javascript
 function cuentaAtras(fechaObjetivo) {
     let ahora = new Date();
@@ -232,7 +232,7 @@ function cuentaAtras(fechaObjetivo) {
     let dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
     let horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     
-    return `⏰ Faltan ${dias} días y ${horas} horas`;
+    return `Faltan ${dias} días y ${horas} horas`;
 }
 
 console.log(cuentaAtras("2025-12-31"));
@@ -240,13 +240,13 @@ console.log(cuentaAtras("2025-12-31"));
 
 ---
 
-## 🔗 Enlaces útiles
+## Enlaces útiles
 
-- 📚 [MDN - Date](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date)
-- 📖 [[JavaScript Básico]]
-- 🎨 [[DOM Manipulation]]
+- [MDN - Date](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date)
+- [[JavaScript Básico]]
+- [[DOM Manipulation]]
 
 ---
 
-**📅 Fecha de creación:** 2025-10-22  
-**🏷️ Tags:** #javascript #date #fechas #tiempo
+**Fecha de creación:** 2025-10-22
+**Tags:** #javascript #date #fechas #tiempo
