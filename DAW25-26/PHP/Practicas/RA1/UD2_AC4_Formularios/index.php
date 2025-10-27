@@ -1,11 +1,4 @@
-<?php
-require 'autoload.php';
-
-$entrenarAleatorio = Entrenar::aleatorio();
-
-
-$nombreAleatorio = $entrenarAleatorio->getNombre();
-?>
+<?php include('back.php'); ?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -16,10 +9,18 @@ $nombreAleatorio = $entrenarAleatorio->getNombre();
     <title>Entrenar</title>
 </head>
 <body>
+
     <section class="form-section">
+
         <div class="container">
+            <?php if(isset($mensajeError)): ?>
+                <div style="text-align: center; padding: 15px; background: #d4edda; color: #155724; border-radius: 8px; max-width: 450px; margin: 0 auto 20px auto;">
+            <?php echo $mensajeError; ?>
+                </div>
+            <?php endif; ?>
             <div class="form-card">
-                <form action="datos_hobby.php" method="get" id="formEntrenar" class="custom-form">
+                <form method="POST" id="formEntrenar" class="custom-form" enctype="multipart/form-data">
+                    <input type="hidden" name="formularioEnviado">
                     <div class="form-header">
                         <h2>Registrar Entrenamiento</h2>
                         <p>Completa tus datos de ejercicio</p>
@@ -30,7 +31,7 @@ $nombreAleatorio = $entrenarAleatorio->getNombre();
                             <i></i>
                             Nombre:
                         </label>
-                        <input type="text" id="nombre" name="nombre" value="<?php echo htmlspecialchars($nombreAleatorio); ?>" placeholder="Tu nombre">
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
                     </div>
 
                     <div class="form-group">
@@ -57,6 +58,10 @@ $nombreAleatorio = $entrenarAleatorio->getNombre();
                         <input type="date" id="fecha" name="fecha">
                     </div>
 
+                    <div>
+                        <input type="file" name="fichero">
+                    </div>
+
                     <button type="submit" class="btn-submit">
                         Enviar
                         <i class="fas fa-arrow-right"></i>
@@ -65,5 +70,6 @@ $nombreAleatorio = $entrenarAleatorio->getNombre();
             </div>
         </div>
     </section>
+
 </body>
 </html>
