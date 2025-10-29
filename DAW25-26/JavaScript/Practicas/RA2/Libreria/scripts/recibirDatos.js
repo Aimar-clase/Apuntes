@@ -11,11 +11,10 @@ btnEnviar.addEventListener("click", function(){
     let nombreLibro = inputNombreLibro.value;
 
     let numPaginas = inputNumPaginas.value;
-    let prestado = inputPrestado.value;
+    let prestado = inputPrestado.checked;
     
     libro.nombre = nombreLibro;
     libro.numPaginas = numPaginas;
     libro.prestado = prestado;
-    alert(libro.nombre + " " + libro.numPaginas + " " + libro.prestado);
-
+    localStorage.setItem('libro', JSON.stringify(libro))
 })

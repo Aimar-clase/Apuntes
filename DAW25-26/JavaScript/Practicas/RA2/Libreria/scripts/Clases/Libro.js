@@ -7,11 +7,4 @@ export class Libro {
         this.prestado = prestado;
     }
 
-    // darDatos() {
-    //     arrayDatos = [this.nombre, this.numPaginas, this.prestado];
-    //     return arrayDatos;
-    // }
-
-
-
 }
