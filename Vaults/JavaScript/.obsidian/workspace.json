@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Aimar Metodos/RA1/Primo.md",
+                "file": "Conceptos/Operadores Ternarios.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Primo"
+              "title": "Operadores Ternarios"
             }
           }
         ]
@@ -168,8 +168,9 @@
   },
   "active": "639894fefd7ff78a",
   "lastOpenFiles": [
-    "Metodos/DOM.md",
+    "Conceptos/Import - Export.md",
     "Aimar Metodos/RA1/Primo.md",
+    "Metodos/DOM.md",
     "Metodos/Math.md",
     "Metodos/Date.md",
     "Metodos/Array.md",
@@ -192,7 +193,6 @@
     "Aimar Metodos/RA1/Teorema Langrage.md",
     "Aimar Metodos/RA1/Triangulo RGB.md",
     "Aimar Metodos/RA1/comprobarPin.md",
-    "Aimar Metodos/RA1/decimalToBinary.md",
-    "test.md"
+    "Aimar Metodos/RA1/decimalToBinary.md"
   ]
 }
