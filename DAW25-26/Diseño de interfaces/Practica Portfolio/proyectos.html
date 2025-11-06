@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Aimar Merodo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'ubuntu': ['Ubuntu', 'sans-serif'],
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-orange': '#fc7c04',
+                        'primary-gold': '#e7b454',
+                        'dark-bg': '#18181b',
+                        'dark-section': '#1f1f23',
+                        'navbar-bg': '#2d2d2d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-white font-ubuntu m-0 p-0">
+
+    <header>
+        <nav class="bg-navbar-bg rounded-[50px] fixed top-5 left-1/2 -translate-x-1/2 w-auto max-w-[90%] z-[1000] px-6 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)]">
+            <div class="bg-transparent flex justify-between items-center gap-12 p-0 h-[50px]">
+                <a href="index.html" class="m-0 flex items-center">
+                    <img src="Images/logos/logo.png" alt="Logo" class="h-[35px] w-auto scale-[4.5]">
+                </a>
+
+                <ul class="flex items-center gap-9 list-none m-0 p-0">
+                    <li><a href="index.html" class="text-sm font-bold text-white no-underline transition-all duration-300 hover:text-primary-orange hover:-translate-y-0.5">Inicio</a></li>
+                    <li><a href="index.html#SobreMi" class="text-sm font-bold text-white no-underline transition-all duration-300 hover:text-primary-orange hover:-translate-y-0.5">Sobre Mi</a></li>
+                    <li><a href="proyectos.html" class="text-sm font-bold text-primary-orange no-underline transition-all duration-300 hover:text-primary-orange hover:-translate-y-0.5">Proyectos</a></li>
+                    <li><a href="curriculum.html" class="text-sm font-bold text-white no-underline transition-all duration-300 hover:text-primary-orange hover:-translate-y-0.5">Curriculum</a></li>
+                    <li>
+                        <a href="https://github.com/AimarMerodo" target="_blank" class="text-white transition-all duration-300 hover:text-primary-orange">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="index.html#Contacto" class="bg-white text-navbar-bg border-none rounded-[25px] px-6 py-2 text-sm font-semibold cursor-pointer transition-all duration-300 font-ubuntu hover:bg-primary-orange hover:text-white hover:-translate-y-0.5">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="bg-dark-bg min-h-[60vh] flex items-center justify-center pt-[120px] pb-12 px-[10%]">
+            <div class="text-center max-w-4xl">
+                <h1 class="text-6xl font-bold mb-6 bg-gradient-to-br from-primary-orange to-primary-gold bg-clip-text text-transparent">Mis Proyectos</h1>
+                <p class="text-xl text-gray-300 leading-relaxed">
+                    Aquí encontrarás una colección de mis trabajos más recientes. Cada proyecto representa un desafío único
+                    y una oportunidad para aprender y crecer como desarrollador.
+                </p>
+            </div>
+        </section>
+
+        <!-- GALERÍA DE PROYECTOS -->
+        <section class="bg-dark-section min-h-screen py-16 px-[10%] border-t-[3px] border-primary-orange">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex justify-center">
+
+                    <!-- Proyecto 1 - VHost (PROYECTO REAL) -->
+                    <div class="bg-navbar-bg rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl group border-2 border-primary-orange max-w-md w-full">
+                        <div class="h-48 bg-gradient-to-br from-primary-orange to-primary-gold flex items-center justify-center relative">
+                            <i class="fas fa-server text-8xl text-white opacity-50"></i>
+                            <span class="absolute top-2 right-2 bg-white text-primary-orange text-xs font-bold px-3 py-1 rounded-full">PROYECTO REAL</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <h3 class="text-2xl font-bold text-primary-orange group-hover:text-primary-gold transition-colors">Web VHost</h3>
+                                <span class="text-xs bg-primary-orange px-3 py-1 rounded-full">Full Stack</span>
+                            </div>
+                            <p class="text-gray-300 mb-4 leading-relaxed text-sm">
+                                Sitio web corporativo completo para empresa de hosting de servidores de videojuegos.
+                                Incluye frontend moderno, tienda online y despliegue en servidor productivo con Debian y Nginx.
+                                Proyecto profesional desplegado y en producción.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-dark-section px-3 py-1 rounded-full text-xs font-semibold text-primary-orange">Astro</span>
+                                <span class="bg-dark-section px-3 py-1 rounded-full text-xs font-semibold text-primary-orange">JavaScript</span>
+                                <span class="bg-dark-section px-3 py-1 rounded-full text-xs font-semibold text-primary-orange">Tailwind CSS</span>
+                                <span class="bg-dark-section px-3 py-1 rounded-full text-xs font-semibold text-primary-orange">Debian</span>
+                                <span class="bg-dark-section px-3 py-1 rounded-full text-xs font-semibold text-primary-orange">Nginx</span>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="https://vhost.tech" target="_blank" class="flex-1 bg-primary-orange text-white text-center py-2 rounded-lg font-semibold transition-all hover:bg-primary-gold">
+                                    Ver
+                                </a>
+                                <a href="https://github.com/VhostLab/Web-VHost" target="_blank" class="flex items-center justify-center w-12 h-10 bg-dark-section rounded-lg transition-all hover:bg-primary-orange">
+                                    <i class="fab fa-github text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-navbar-bg border-t-[3px] border-primary-orange py-8 px-[10%]">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400 text-sm">
+                &copy; 2024 Aimar Merodo. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

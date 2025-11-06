@@ -4,32 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aimar Merodo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'ubuntu': ['Ubuntu', 'sans-serif'],
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-orange': '#fc7c04',
+                        'primary-gold': '#e7b454',
+                        'dark-bg': '#18181b',
+                        'dark-section': '#1f1f23',
+                        'navbar-bg': '#2d2d2d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #fc7c04; }
+        }
+
+        .typing-animation {
+            overflow: hidden;
+            border-right: .15em solid #fc7c04;
+            white-space: nowrap;
+            animation:
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+    </style>
+
 
 </head>
-<body>
+<body class="bg-dark-bg text-white font-ubuntu m-0 p-0">
 
     <header>
-        <nav class="navbar">
-            <div class="navContainer">
-                <a href="#" class="navbar-brand">
-                    <img src="Images/logos/logo.png" alt="Logo" class="miLogo">
+        <nav class="bg-navbar-bg rounded-[50px] fixed top-5 left-1/2 -translate-x-1/2 w-auto max-w-[90%] z-[1000] px-6 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)]">
+            <div class="bg-transparent flex justify-between items-center gap-12 p-0 h-[50px]">
+                <a href="index.html" class="m-0 flex items-center">
+                    <img src="Images/logos/logo.png" alt="Logo" class="h-[35px] w-auto scale-[4.5]">
                 </a>
 
-                <ul class="navbar-lista">
-                    <li><a href="#Inicio">Inicio</a></li>
-                    <li><a href="#SobreMi">Sobre Mi</a></li>  
-                    <li><a href="#TechStack">Tech Stack</a></li> 
-                    <li><a href="#Proyectos">Proyectos</a></li> 
+                <ul class="flex items-center gap-9 list-none m-0 p-0">
+                    <li><a href="#Inicio" class="text-sm font-bold text-white no-underline transition-all duration-300 hover:text-primary-orange hover:-translate-y-0.5">Inicio</a></li>
+                    <li><a href="#SobreMi" class="text-sm font-bold text-white no-underline transition-all duration-300 hover:text-primary-orange hover:-translate-y-0.5">Sobre Mi</a></li>
+                    <li><a href="proyectos.html" class="text-sm font-bold text-white no-underline transition-all duration-300 hover:text-primary-orange hover:-translate-y-0.5">Proyectos</a></li>
+                    <li><a href="curriculum.html" class="text-sm font-bold text-white no-underline transition-all duration-300 hover:text-primary-orange hover:-translate-y-0.5">Curriculum</a></li>
                     <li>
-                        <a href="https://github.com/tuusuario" target="_blank" class="github-link">
+                        <a href="https://github.com/AimarMerodo" target="_blank" class="text-white transition-all duration-300 hover:text-primary-orange">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                             </svg>
@@ -37,41 +77,369 @@
                     </li>
                 </ul>
 
-                <button class="contact-btn">Contacto</button>
+                <a href="#Contacto" class="bg-white text-navbar-bg border-none rounded-[25px] px-6 py-2 text-sm font-semibold cursor-pointer transition-all duration-300 font-ubuntu hover:bg-primary-orange hover:text-white hover:-translate-y-0.5">Contacto</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="contenedorHero">
-                <div class="heroIntroduccion">
-                    <h2 class="heroTitulo">Hola,</h2>
-                    <h2 class="heroTitulo">Me llamo</h2>
-                    <h3 class="heroName">Aimar Merodo</h3>
-                    <p class="heroParrafo">Desarrollador Web</p>
-                    <div class="contenedorBtn">
-                        <button class="heroBtn">CONTACTAME</button>
-                        <button class="heroBtn">DESCARGAR CV</button>
+        <section id="Inicio" class="bg-dark-bg min-h-screen flex items-center pt-[120px]">
+            <div class="flex items-center w-full justify-around px-[10%]">
+                <div class="flex flex-col justify-center items-start w-auto">
+                    <h2 class="font-montserrat text-5xl m-0 leading-tight">Hola,</h2>
+                    <h2 class="font-montserrat text-5xl m-0 leading-tight">Me llamo</h2>
+                    <h3 class="font-ubuntu text-7xl my-2.5 bg-gradient-to-br from-primary-orange to-primary-gold bg-clip-text text-transparent">Aimar Merodo</h3>
+                    <p class="typing-animation font-montserrat text-4xl my-2.5 tracking-[0.15em]">Desarrollador Web</p>
+                    <div class="flex gap-12 mt-8">
+                        <button class="font-ubuntu font-bold text-xl w-60 h-[50px] bg-transparent border-[3px] border-primary-orange rounded-2xl text-primary-orange cursor-pointer transition-all duration-300 hover:text-white hover:bg-primary-orange hover:-translate-y-1">CONTACTAME</button>
+                        <button class="font-ubuntu font-bold text-xl w-60 h-[50px] bg-transparent border-[3px] border-primary-orange rounded-2xl text-primary-orange cursor-pointer transition-all duration-300 hover:text-white hover:bg-primary-orange hover:-translate-y-1">DESCARGAR CV</button>
                     </div>
                 </div>
 
-                <div class="programadorContainer">
-                    <img src="Images/programador.png" alt="Programador" class="imgProgramador">
+                <div class="flex justify-center items-center">
+                    <img src="Images/programador.png" alt="Programador" class="w-[600px] h-auto">
                 </div>
             </div>
 
         </section>
-        
 
-        <section class="seccionSobreMi">
 
-            <h2 class="sobreMi">Sobre mi</h2>
-            <p>hola</p>
+        <section id="SobreMi" class="bg-dark-section min-h-screen py-24 px-[10%] border-t-[3px] border-primary-orange">
 
+            <h2 class="text-5xl leading-none font-bold text-center mb-12 bg-gradient-to-br from-primary-orange to-primary-gold bg-clip-text text-transparent">Sobre mi</h2>
+
+            <div class="max-w-5xl mx-auto">
+                <div class="bg-navbar-bg rounded-3xl p-10 shadow-lg">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 text-primary-orange">¿Quién soy?</h3>
+                            <p class="text-gray-300 leading-relaxed mb-4">
+                                Estudiante de Desarrollo de Aplicaciones Web en IES Comercio con formación previa en
+                                Sistemas Microinformáticos y Redes. Mi pasión por la tecnología me llevó del hardware
+                                al desarrollo web, donde descubrí que puedo crear soluciones completas desde el frontend
+                                hasta el despliegue en servidores.
+                            </p>
+                            <p class="text-gray-300 leading-relaxed mb-4">
+                                He trabajado en proyectos reales para empresas como VHost, donde desarrollé su plataforma
+                                web desde cero. Me gusta enfrentar desafíos técnicos y aprender nuevas tecnologías.
+                                Cada línea de código es una oportunidad para crear algo mejor y más eficiente.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 text-primary-orange">Mi Experiencia</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-code text-primary-orange text-xl mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold text-lg">Desarrollo Web</h4>
+                                        <p class="text-gray-400 text-sm">Frontend con Astro, HTML, CSS y Tailwind CSS</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-server text-primary-orange text-xl mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold text-lg">Administración de Servidores</h4>
+                                        <p class="text-gray-400 text-sm">Despliegue y configuración en Debian con Nginx</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-network-wired text-primary-orange text-xl mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold text-lg">Sistemas y Redes</h4>
+                                        <p class="text-gray-400 text-sm">Experiencia en infraestructura IT y soporte técnico</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-8 border-t border-gray-700">
+                        <h3 class="text-2xl font-bold mb-6 text-center text-primary-orange">Habilidades Clave</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="bg-dark-section rounded-xl p-4 text-center transition-all duration-300 hover:bg-dark-bg hover:scale-105">
+                                <i class="fas fa-lightbulb text-3xl text-primary-orange mb-2"></i>
+                                <p class="text-sm font-semibold">Creatividad</p>
+                            </div>
+                            <div class="bg-dark-section rounded-xl p-4 text-center transition-all duration-300 hover:bg-dark-bg hover:scale-105">
+                                <i class="fas fa-users text-3xl text-primary-orange mb-2"></i>
+                                <p class="text-sm font-semibold">Trabajo en Equipo</p>
+                            </div>
+                            <div class="bg-dark-section rounded-xl p-4 text-center transition-all duration-300 hover:bg-dark-bg hover:scale-105">
+                                <i class="fas fa-tasks text-3xl text-primary-orange mb-2"></i>
+                                <p class="text-sm font-semibold">Organización</p>
+                            </div>
+                            <div class="bg-dark-section rounded-xl p-4 text-center transition-all duration-300 hover:bg-dark-bg hover:scale-105">
+                                <i class="fas fa-rocket text-3xl text-primary-orange mb-2"></i>
+                                <p class="text-sm font-semibold">Innovación</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- TECH STACK SECTION -->
+        <section id="TechStack" class="bg-dark-bg min-h-screen py-24 px-[10%]">
+            <h2 class="text-5xl leading-none font-bold text-center mb-12 bg-gradient-to-br from-primary-orange to-primary-gold bg-clip-text text-transparent">Tech Stack</h2>
+
+            <div class="max-w-6xl mx-auto">
+                <!-- Frontend -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-bold mb-6 text-primary-orange flex items-center gap-3">
+                        <i class="fas fa-laptop-code"></i>
+                        Frontend
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                        <div class="bg-navbar-bg rounded-xl p-6 text-center transition-all duration-300 hover:scale-110 hover:bg-primary-orange group">
+                            <i class="fab fa-html5 text-5xl mb-3 text-orange-600 group-hover:text-white"></i>
+                            <p class="font-semibold">HTML5</p>
+                        </div>
+                        <div class="bg-navbar-bg rounded-xl p-6 text-center transition-all duration-300 hover:scale-110 hover:bg-primary-orange group">
+                            <i class="fab fa-css3-alt text-5xl mb-3 text-blue-500 group-hover:text-white"></i>
+                            <p class="font-semibold">CSS3</p>
+                        </div>
+                        <div class="bg-navbar-bg rounded-xl p-6 text-center transition-all duration-300 hover:scale-110 hover:bg-primary-orange group">
+                            <i class="fab fa-js text-5xl mb-3 text-yellow-400 group-hover:text-white"></i>
+                            <p class="font-semibold">JavaScript</p>
+                        </div>
+                        <div class="bg-navbar-bg rounded-xl p-6 text-center transition-all duration-300 hover:scale-110 hover:bg-primary-orange group">
+                            <svg class="w-12 h-12 mx-auto mb-3 text-cyan-400 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/>
+                            </svg>
+                            <p class="font-semibold">Tailwind CSS</p>
+                        </div>
+                        <div class="bg-navbar-bg rounded-xl p-6 text-center transition-all duration-300 hover:scale-110 hover:bg-primary-orange group">
+                            <i class="fas fa-rocket text-5xl mb-3 text-purple-500 group-hover:text-white"></i>
+                            <p class="font-semibold">Astro</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend & Databases -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-bold mb-6 text-primary-orange flex items-center gap-3">
+                        <i class="fas fa-server"></i>
+                        Backend & Databases
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div class="bg-navbar-bg rounded-xl p-6 text-center transition-all duration-300 hover:scale-110 hover:bg-primary-orange group">
+                            <i class="fab fa-php text-5xl mb-3 text-purple-500 group-hover:text-white"></i>
+                            <p class="font-semibold">PHP</p>
+                        </div>
+                        <div class="bg-navbar-bg rounded-xl p-6 text-center transition-all duration-300 hover:scale-110 hover:bg-primary-orange group">
+                            <i class="fas fa-database text-5xl mb-3 text-orange-500 group-hover:text-white"></i>
+                            <p class="font-semibold">MySQL</p>
+                        </div>
+                        <div class="bg-navbar-bg rounded-xl p-6 text-center transition-all duration-300 hover:scale-110 hover:bg-primary-orange group">
+                            <i class="fab fa-linux text-5xl mb-3 text-yellow-300 group-hover:text-white"></i>
+                            <p class="font-semibold">Linux (Debian)</p>
+                        </div>
+                        <div class="bg-navbar-bg rounded-xl p-6 text-center transition-all duration-300 hover:scale-110 hover:bg-primary-orange group">
+                            <i class="fas fa-cog text-5xl mb-3 text-green-500 group-hover:text-white"></i>
+                            <p class="font-semibold">Nginx</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Herramientas & Otros -->
+                <div>
+                    <h3 class="text-3xl font-bold mb-6 text-primary-orange flex items-center gap-3">
+                        <i class="fas fa-tools"></i>
+                        Herramientas & Otros
+                    </h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div class="bg-navbar-bg rounded-xl p-6 text-center transition-all duration-300 hover:scale-110 hover:bg-primary-orange group">
+                            <i class="fab fa-git-alt text-5xl mb-3 text-orange-600 group-hover:text-white"></i>
+                            <p class="font-semibold">Git</p>
+                        </div>
+                        <div class="bg-navbar-bg rounded-xl p-6 text-center transition-all duration-300 hover:scale-110 hover:bg-primary-orange group">
+                            <i class="fab fa-github text-5xl mb-3 text-gray-400 group-hover:text-white"></i>
+                            <p class="font-semibold">GitHub</p>
+                        </div>
+                        <div class="bg-navbar-bg rounded-xl p-6 text-center transition-all duration-300 hover:scale-110 hover:bg-primary-orange group">
+                            <i class="fas fa-terminal text-5xl mb-3 text-green-400 group-hover:text-white"></i>
+                            <p class="font-semibold">VS Code</p>
+                        </div>
+                        <div class="bg-navbar-bg rounded-xl p-6 text-center transition-all duration-300 hover:scale-110 hover:bg-primary-orange group">
+                            <i class="fab fa-npm text-5xl mb-3 text-red-600 group-hover:text-white"></i>
+                            <p class="font-semibold">NPM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS SECTION -->
+        <section id="Proyectos" class="bg-dark-section min-h-screen py-24 px-[10%] border-t-[3px] border-primary-orange">
+            <h2 class="text-5xl leading-none font-bold text-center mb-12 bg-gradient-to-br from-primary-orange to-primary-gold bg-clip-text text-transparent">Mis Proyectos</h2>
+
+            <div class="max-w-7xl mx-auto">
+                <div class="flex justify-center">
+
+                    <!-- Proyecto VHost Web -->
+                    <div class="bg-navbar-bg rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl group max-w-md w-full">
+                        <div class="h-48 bg-gradient-to-br from-primary-orange to-primary-gold flex items-center justify-center">
+                            <i class="fas fa-server text-8xl text-white opacity-50"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-3 text-primary-orange group-hover:text-primary-gold transition-colors">Web VHost</h3>
+                            <p class="text-gray-300 mb-4 leading-relaxed">
+                                Sitio web corporativo para empresa de hosting de servidores. Desarrollo completo y despliegue en producción.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-dark-section px-3 py-1 rounded-full text-xs font-semibold text-primary-orange">Astro</span>
+                                <span class="bg-dark-section px-3 py-1 rounded-full text-xs font-semibold text-primary-orange">JavaScript</span>
+                                <span class="bg-dark-section px-3 py-1 rounded-full text-xs font-semibold text-primary-orange">Tailwind</span>
+                            </div>
+                            <div class="flex gap-4">
+                                <a href="https://vhost.tech" target="_blank" class="flex-1 bg-primary-orange text-white text-center py-2 rounded-lg font-semibold transition-all hover:bg-primary-gold">
+                                    Ver
+                                </a>
+                                <a href="https://github.com/VhostLab/Web-VHost" target="_blank" class="flex items-center justify-center w-12 h-10 bg-dark-section rounded-lg transition-all hover:bg-primary-orange">
+                                    <i class="fab fa-github text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO SECTION -->
+        <section id="Contacto" class="bg-dark-bg min-h-screen py-24 px-[10%] flex items-center">
+            <div class="max-w-6xl mx-auto w-full">
+                <h2 class="text-5xl leading-none font-bold text-center mb-12 bg-gradient-to-br from-primary-orange to-primary-gold bg-clip-text text-transparent">Contacto</h2>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Información de Contacto -->
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-3xl font-bold mb-6 text-primary-orange">¡Hablemos!</h3>
+                            <p class="text-gray-300 leading-relaxed mb-8">
+                                ¿Tienes un proyecto en mente o simplemente quieres conectar? No dudes en contactarme.
+                                Estoy siempre abierto a nuevas oportunidades y colaboraciones.
+                            </p>
+                        </div>
+
+                        <!-- Información de contacto -->
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 p-4 bg-navbar-bg rounded-xl transition-all hover:bg-primary-orange group">
+                                <div class="w-12 h-12 bg-primary-orange rounded-full flex items-center justify-center group-hover:bg-white">
+                                    <i class="fas fa-envelope text-white text-xl group-hover:text-primary-orange"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400">Email</p>
+                                    <p class="font-semibold">aimarmerodoa@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-4 bg-navbar-bg rounded-xl transition-all hover:bg-primary-orange group">
+                                <div class="w-12 h-12 bg-primary-orange rounded-full flex items-center justify-center group-hover:bg-white">
+                                    <i class="fas fa-phone text-white text-xl group-hover:text-primary-orange"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400">Teléfono</p>
+                                    <p class="font-semibold">+34 636 471 877</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-4 bg-navbar-bg rounded-xl transition-all hover:bg-primary-orange group">
+                                <div class="w-12 h-12 bg-primary-orange rounded-full flex items-center justify-center group-hover:bg-white">
+                                    <i class="fas fa-map-marker-alt text-white text-xl group-hover:text-primary-orange"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400">Ubicación</p>
+                                    <p class="font-semibold">Logroño, La Rioja</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Redes Sociales -->
+                        <div>
+                            <p class="text-gray-400 mb-4">Sígueme en:</p>
+                            <div class="flex gap-4">
+                                <a href="https://github.com/AimarMerodo" target="_blank" class="w-12 h-12 bg-navbar-bg rounded-full flex items-center justify-center transition-all hover:bg-primary-orange hover:scale-110">
+                                    <i class="fab fa-github text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario de Contacto -->
+                    <div class="bg-navbar-bg rounded-2xl p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-primary-orange">Envíame un mensaje</h3>
+                        <form class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Nombre</label>
+                                <input type="text" class="w-full px-4 py-3 bg-dark-section rounded-lg border border-gray-700 focus:border-primary-orange focus:outline-none transition-colors" placeholder="Tu nombre">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 bg-dark-section rounded-lg border border-gray-700 focus:border-primary-orange focus:outline-none transition-colors" placeholder="tu@email.com">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Asunto</label>
+                                <input type="text" class="w-full px-4 py-3 bg-dark-section rounded-lg border border-gray-700 focus:border-primary-orange focus:outline-none transition-colors" placeholder="¿De qué quieres hablar?">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Mensaje</label>
+                                <textarea rows="5" class="w-full px-4 py-3 bg-dark-section rounded-lg border border-gray-700 focus:border-primary-orange focus:outline-none transition-colors resize-none" placeholder="Tu mensaje..."></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-primary-orange text-white font-bold py-3 rounded-lg transition-all hover:bg-primary-gold hover:scale-105">
+                                Enviar Mensaje
+                                <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer></footer>
+    <footer class="bg-navbar-bg border-t-[3px] border-primary-orange py-8 px-[10%]">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400 text-sm">
+                &copy; 2024 Aimar Merodo. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        // Smooth scroll para los enlaces de navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Botón de Contacto en navbar
+        document.querySelectorAll('.contact-btn, button:contains("CONTACTAME")').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const contactSection = document.querySelector('#Contacto');
+                if (contactSection) {
+                    contactSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

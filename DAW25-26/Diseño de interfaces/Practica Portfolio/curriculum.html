@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum - Aimar Merodo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'ubuntu': ['Ubuntu', 'sans-serif'],
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-orange': '#fc7c04',
+                        'primary-gold': '#e7b454',
+                        'dark-bg': '#18181b',
+                        'dark-section': '#1f1f23',
+                        'navbar-bg': '#2d2d2d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-white font-ubuntu m-0 p-0">
+
+    <header>
+        <nav class="bg-navbar-bg rounded-[50px] fixed top-5 left-1/2 -translate-x-1/2 w-auto max-w-[90%] z-[1000] px-6 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)]">
+            <div class="bg-transparent flex justify-between items-center gap-12 p-0 h-[50px]">
+                <a href="index.html" class="m-0 flex items-center">
+                    <img src="Images/logos/logo.png" alt="Logo" class="h-[35px] w-auto scale-[4.5]">
+                </a>
+
+                <ul class="flex items-center gap-9 list-none m-0 p-0">
+                    <li><a href="index.html" class="text-sm font-bold text-white no-underline transition-all duration-300 hover:text-primary-orange hover:-translate-y-0.5">Inicio</a></li>
+                    <li><a href="index.html#SobreMi" class="text-sm font-bold text-white no-underline transition-all duration-300 hover:text-primary-orange hover:-translate-y-0.5">Sobre Mi</a></li>
+                    <li><a href="proyectos.html" class="text-sm font-bold text-white no-underline transition-all duration-300 hover:text-primary-orange hover:-translate-y-0.5">Proyectos</a></li>
+                    <li><a href="curriculum.html" class="text-sm font-bold text-primary-orange no-underline transition-all duration-300 hover:text-primary-orange hover:-translate-y-0.5">Curriculum</a></li>
+                    <li>
+                        <a href="https://github.com/AimarMerodo" target="_blank" class="text-white transition-all duration-300 hover:text-primary-orange">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="index.html#Contacto" class="bg-white text-navbar-bg border-none rounded-[25px] px-6 py-2 text-sm font-semibold cursor-pointer transition-all duration-300 font-ubuntu hover:bg-primary-orange hover:text-white hover:-translate-y-0.5">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="bg-dark-bg min-h-[50vh] flex items-center justify-center pt-[120px] pb-12 px-[10%]">
+            <div class="text-center max-w-4xl">
+                <h1 class="text-6xl font-bold mb-6 bg-gradient-to-br from-primary-orange to-primary-gold bg-clip-text text-transparent">Curriculum Vitae</h1>
+                <p class="text-xl text-gray-300 leading-relaxed mb-8">
+                    Mi trayectoria profesional, habilidades y logros como desarrollador web
+                </p>
+                <button class="bg-primary-orange text-white px-8 py-3 rounded-lg font-bold transition-all hover:bg-primary-gold hover:scale-105">
+                    <i class="fas fa-download mr-2"></i>
+                    Descargar CV en PDF
+                </button>
+            </div>
+        </section>
+
+        <!-- MAIN CONTENT -->
+        <section class="bg-dark-section py-16 px-[10%] border-t-[3px] border-primary-orange">
+            <div class="max-w-6xl mx-auto">
+
+                <!-- RESUMEN PROFESIONAL -->
+                <div class="bg-navbar-bg rounded-2xl p-8 mb-8">
+                    <h2 class="text-3xl font-bold mb-4 text-primary-orange flex items-center gap-3">
+                        <i class="fas fa-user"></i>
+                        Resumen Profesional
+                    </h2>
+                    <p class="text-gray-300 leading-relaxed">
+                        Estudiante de Desarrollo de Aplicaciones Web con sólida base técnica en sistemas informáticos y redes.
+                        Experiencia práctica en desarrollo frontend con tecnologías modernas como Astro, JavaScript, HTML y
+                        Tailwind CSS. Capacidad demostrada en proyectos reales, incluyendo el desarrollo completo de plataformas
+                        web para empresas y su despliegue en entornos de producción con Debian y Nginx. Orientado a resultados,
+                        con habilidades en administración de sistemas y resolución de problemas técnicos.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- COLUMNA IZQUIERDA -->
+                    <div class="space-y-8">
+
+                        <!-- EXPERIENCIA LABORAL -->
+                        <div class="bg-navbar-bg rounded-2xl p-8">
+                            <h2 class="text-3xl font-bold mb-6 text-primary-orange flex items-center gap-3">
+                                <i class="fas fa-briefcase"></i>
+                                Experiencia Laboral
+                            </h2>
+
+                            <!-- Experiencia 1 -->
+                            <div class="mb-6 pb-6 border-b border-gray-700 last:border-b-0 last:pb-0">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-primary-gold">Desarrollador Web</h3>
+                                    <span class="text-sm text-gray-400">2023 - 2024</span>
+                                </div>
+                                <p class="text-gray-400 mb-2">VHost - Empresa de Hosting de Servidores</p>
+                                <ul class="list-disc list-inside text-gray-300 space-y-1 text-sm">
+                                    <li>Desarrollo completo del sitio web corporativo (vhost.tech)</li>
+                                    <li>Implementación frontend con Astro, JavaScript y Tailwind CSS</li>
+                                    <li>Despliegue y configuración del servidor web en Debian con Nginx</li>
+                                    <li>Optimización del rendimiento y experiencia de usuario</li>
+                                </ul>
+                            </div>
+
+                            <!-- Experiencia 2 -->
+                            <div class="mb-6 pb-6 border-b border-gray-700 last:border-b-0 last:pb-0">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-primary-gold">Prácticas Técnico Informático</h3>
+                                    <span class="text-sm text-gray-400">2023</span>
+                                </div>
+                                <p class="text-gray-400 mb-2">El Ventanal - Centro de Formación, Logroño</p>
+                                <ul class="list-disc list-inside text-gray-300 space-y-1 text-sm">
+                                    <li>Soporte técnico y mantenimiento de equipos informáticos</li>
+                                    <li>Administración de redes y sistemas</li>
+                                    <li>Resolución de incidencias técnicas</li>
+                                </ul>
+                            </div>
+
+                            <!-- Experiencia 3 -->
+                            <div>
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-primary-gold">Prácticas Técnico Informático</h3>
+                                    <span class="text-sm text-gray-400">2022</span>
+                                </div>
+                                <p class="text-gray-400 mb-2">HDC - Tienda de Informática, Logroño</p>
+                                <ul class="list-disc list-inside text-gray-300 space-y-1 text-sm">
+                                    <li>Atención al cliente y asesoramiento técnico</li>
+                                    <li>Reparación y mantenimiento de equipos</li>
+                                    <li>Ventas de productos informáticos</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- IDIOMAS -->
+                        <div class="bg-navbar-bg rounded-2xl p-8">
+                            <h2 class="text-3xl font-bold mb-6 text-primary-orange flex items-center gap-3">
+                                <i class="fas fa-language"></i>
+                                Idiomas
+                            </h2>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="font-semibold">Español</span>
+                                        <span class="text-gray-400">Nativo</span>
+                                    </div>
+                                    <div class="w-full bg-dark-section rounded-full h-2">
+                                        <div class="bg-primary-orange h-2 rounded-full" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="font-semibold">Inglés</span>
+                                        <span class="text-gray-400">Intermedio (B1)</span>
+                                    </div>
+                                    <div class="w-full bg-dark-section rounded-full h-2">
+                                        <div class="bg-primary-orange h-2 rounded-full" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- COLUMNA DERECHA -->
+                    <div class="space-y-8">
+
+                        <!-- EDUCACIÓN -->
+                        <div class="bg-navbar-bg rounded-2xl p-8">
+                            <h2 class="text-3xl font-bold mb-6 text-primary-orange flex items-center gap-3">
+                                <i class="fas fa-graduation-cap"></i>
+                                Educación
+                            </h2>
+
+                            <div class="mb-6 pb-6 border-b border-gray-700 last:border-b-0 last:pb-0">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-primary-gold">FP Superior en DAW</h3>
+                                    <span class="text-sm text-gray-400">2024 - 2026</span>
+                                </div>
+                                <p class="text-gray-400">IES Comercio, Logroño</p>
+                                <p class="text-gray-300 text-sm mt-2">Desarrollo de Aplicaciones Web (En curso)</p>
+                            </div>
+
+                            <div class="mb-6 pb-6 border-b border-gray-700 last:border-b-0 last:pb-0">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-primary-gold">FP Grado Medio en SMR</h3>
+                                    <span class="text-sm text-gray-400">2021 - 2023</span>
+                                </div>
+                                <p class="text-gray-400">Centro de Formación Profesional</p>
+                                <p class="text-gray-300 text-sm mt-2">Sistemas Microinformáticos y Redes</p>
+                            </div>
+                        </div>
+
+                        <!-- FORMACIÓN COMPLEMENTARIA -->
+                        <div class="bg-navbar-bg rounded-2xl p-8">
+                            <h2 class="text-3xl font-bold mb-6 text-primary-orange flex items-center gap-3">
+                                <i class="fas fa-certificate"></i>
+                                Formación Complementaria
+                            </h2>
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-primary-orange text-xl mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold">Administración de Sistemas Linux</h4>
+                                        <p class="text-gray-400 text-sm">Experiencia práctica con Debian y Nginx</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-primary-orange text-xl mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold">Desarrollo Web Moderno</h4>
+                                        <p class="text-gray-400 text-sm">Astro, JavaScript, Tailwind CSS</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fas fa-check-circle text-primary-orange text-xl mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold">Redes y Sistemas</h4>
+                                        <p class="text-gray-400 text-sm">Configuración y administración de infraestructura IT</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HABILIDADES TÉCNICAS -->
+                        <div class="bg-navbar-bg rounded-2xl p-8">
+                            <h2 class="text-3xl font-bold mb-6 text-primary-orange flex items-center gap-3">
+                                <i class="fas fa-code"></i>
+                                Habilidades Técnicas
+                            </h2>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="font-semibold">HTML / CSS / Tailwind CSS</span>
+                                        <span class="text-gray-400">90%</span>
+                                    </div>
+                                    <div class="w-full bg-dark-section rounded-full h-2">
+                                        <div class="bg-primary-orange h-2 rounded-full" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="font-semibold">JavaScript</span>
+                                        <span class="text-gray-400">85%</span>
+                                    </div>
+                                    <div class="w-full bg-dark-section rounded-full h-2">
+                                        <div class="bg-primary-orange h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="font-semibold">PHP / MySQL</span>
+                                        <span class="text-gray-400">75%</span>
+                                    </div>
+                                    <div class="w-full bg-dark-section rounded-full h-2">
+                                        <div class="bg-primary-orange h-2 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="font-semibold">Astro Framework</span>
+                                        <span class="text-gray-400">80%</span>
+                                    </div>
+                                    <div class="w-full bg-dark-section rounded-full h-2">
+                                        <div class="bg-primary-orange h-2 rounded-full" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="font-semibold">Linux (Debian) / Nginx</span>
+                                        <span class="text-gray-400">75%</span>
+                                    </div>
+                                    <div class="w-full bg-dark-section rounded-full h-2">
+                                        <div class="bg-primary-orange h-2 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="font-semibold">Git / GitHub</span>
+                                        <span class="text-gray-400">85%</span>
+                                    </div>
+                                    <div class="w-full bg-dark-section rounded-full h-2">
+                                        <div class="bg-primary-orange h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SOFT SKILLS -->
+                        <div class="bg-navbar-bg rounded-2xl p-8">
+                            <h2 class="text-3xl font-bold mb-6 text-primary-orange flex items-center gap-3">
+                                <i class="fas fa-star"></i>
+                                Habilidades Blandas
+                            </h2>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-dark-section p-4 rounded-xl text-center">
+                                    <i class="fas fa-users text-3xl text-primary-orange mb-2"></i>
+                                    <p class="text-sm font-semibold">Trabajo en Equipo</p>
+                                </div>
+                                <div class="bg-dark-section p-4 rounded-xl text-center">
+                                    <i class="fas fa-comments text-3xl text-primary-orange mb-2"></i>
+                                    <p class="text-sm font-semibold">Comunicación</p>
+                                </div>
+                                <div class="bg-dark-section p-4 rounded-xl text-center">
+                                    <i class="fas fa-lightbulb text-3xl text-primary-orange mb-2"></i>
+                                    <p class="text-sm font-semibold">Creatividad</p>
+                                </div>
+                                <div class="bg-dark-section p-4 rounded-xl text-center">
+                                    <i class="fas fa-clock text-3xl text-primary-orange mb-2"></i>
+                                    <p class="text-sm font-semibold">Gestión del Tiempo</p>
+                                </div>
+                                <div class="bg-dark-section p-4 rounded-xl text-center">
+                                    <i class="fas fa-puzzle-piece text-3xl text-primary-orange mb-2"></i>
+                                    <p class="text-sm font-semibold">Resolución de Problemas</p>
+                                </div>
+                                <div class="bg-dark-section p-4 rounded-xl text-center">
+                                    <i class="fas fa-chart-line text-3xl text-primary-orange mb-2"></i>
+                                    <p class="text-sm font-semibold">Adaptabilidad</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INTERESES -->
+                <div class="bg-navbar-bg rounded-2xl p-8 mt-8">
+                    <h2 class="text-3xl font-bold mb-6 text-primary-orange flex items-center gap-3">
+                        <i class="fas fa-heart"></i>
+                        Intereses y Hobbies
+                    </h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <i class="fas fa-laptop-code text-4xl text-primary-orange mb-2"></i>
+                            <p class="text-sm">Programación</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-book text-4xl text-primary-orange mb-2"></i>
+                            <p class="text-sm">Aprendizaje Continuo</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-gamepad text-4xl text-primary-orange mb-2"></i>
+                            <p class="text-sm">Videojuegos</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-music text-4xl text-primary-orange mb-2"></i>
+                            <p class="text-sm">Música</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-navbar-bg border-t-[3px] border-primary-orange py-8 px-[10%]">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400 text-sm">
+                &copy; 2024 Aimar Merodo. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
