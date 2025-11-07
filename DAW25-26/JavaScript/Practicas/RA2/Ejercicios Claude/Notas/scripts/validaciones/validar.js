@@ -1,5 +1,13 @@
+import { storageNotas } from "../localstorage/storageNotas.js";
+
 export function validarDatos(nota) {
 
-    alert(Object.values(nota) === null);
+    
 
+
+    if (nota.titulo.trim() === "" || nota.descripcion.trim() === "" || nota.categoria === "" || nota.fecha.trim() === "") {
+        alert("Tienes un campo vacio");
+    }else {
+        storageNotas(nota);
+    }
 } 
