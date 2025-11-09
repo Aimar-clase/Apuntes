@@ -2,57 +2,89 @@
 # 📦 DEPENDENCIAS DE PHP (COMPOSER)
 # ─────────────────────────────
 /vendor/
-composer.lock
 **/vendor/
+composer.lock
+
 # ─────────────────────────────
 # ⚙️ CONFIGURACIONES DE ENTORNO
 # ─────────────────────────────
 .env
+**/.env
 .env.local
 .env.*.local
 
 # ─────────────────────────────
 # 🗂️ ARCHIVOS DE SISTEMA Y TEMPORALES
 # ─────────────────────────────
+# Mac / Windows / Linux basura de sistema
 .DS_Store
+**/.DS_Store
 Thumbs.db
+**/Thumbs.db
 desktop.ini
+**/desktop.ini
+
+# Archivos temporales y de caché
 *.tmp
 *.bak
 *.swp
 *.old
 *.cache
 *.log
+**/*.tmp
+**/*.bak
+**/*.swp
+**/*.old
+**/*.cache
+**/*.log
 
 # ─────────────────────────────
 # 🧠 OBSIDIAN
-# (para evitar subir caché o metadatos innecesarios)
+# (evita subir caché y plugins, pero mantiene tus notas)
 # ─────────────────────────────
-.obsidian/cache
-.obsidian/workspace
-.obsidian/plugins/
-.obsidian/snippets/
-.obsidian/plugins.json
+.obsidian/
+**/.obsidian/
+**/.obsidian/cache
+**/.obsidian/workspace
+**/.obsidian/plugins/
+**/.obsidian/snippets/
+**/.obsidian/plugins.json
 
 # ─────────────────────────────
 # 💻 EDITORES Y ENTORNOS DE DESARROLLO
+# (PhpStorm, VSCode, NetBeans, etc.)
 # ─────────────────────────────
 .idea/
+**/.idea/
 .vscode/
+**/.vscode/
 nbproject/
+**/nbproject/
 
 # ─────────────────────────────
-# 🧾 ARCHIVOS COMPILADOS O GENERADOS (por frameworks o build)
+# 🧾 ARCHIVOS COMPILADOS O GENERADOS (JS, CSS, frameworks, etc.)
 # ─────────────────────────────
 node_modules/
+**/node_modules/
 dist/
+**/dist/
 build/
+**/build/
 .cache/
+**/.cache/
 out/
+**/out/
 
 # ─────────────────────────────
-# 📜 SISTEMAS DE CONTROL DE VERSIONES SECUNDARIOS
+# 📜 CONTROL DE VERSIONES SECUNDARIOS / FUSIONES
 # ─────────────────────────────
 *.orig
+**/*.orig
 
-## test
+# ─────────────────────────────
+# 🔬 OTROS ARCHIVOS QUE PUEDEN APARECER
+# ─────────────────────────────
+# Copias automáticas de Office o editores
+~$*
+# Archivos de bloqueo o temporales de Word, Excel, etc.
+*.lnk
