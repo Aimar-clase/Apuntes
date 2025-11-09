@@ -54,3 +54,5 @@ out/
 # 📜 SISTEMAS DE CONTROL DE VERSIONES SECUNDARIOS
 # ─────────────────────────────
 *.orig
+
+## test
