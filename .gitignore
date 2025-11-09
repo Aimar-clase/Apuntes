@@ -1,2 +1,56 @@
+# ─────────────────────────────
+# 📦 DEPENDENCIAS DE PHP (COMPOSER)
+# ─────────────────────────────
 /vendor/
 composer.lock
+
+# ─────────────────────────────
+# ⚙️ CONFIGURACIONES DE ENTORNO
+# ─────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ─────────────────────────────
+# 🗂️ ARCHIVOS DE SISTEMA Y TEMPORALES
+# ─────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+*.swp
+*.old
+*.cache
+*.log
+
+# ─────────────────────────────
+# 🧠 OBSIDIAN
+# (para evitar subir caché o metadatos innecesarios)
+# ─────────────────────────────
+.obsidian/cache
+.obsidian/workspace
+.obsidian/plugins/
+.obsidian/snippets/
+.obsidian/plugins.json
+
+# ─────────────────────────────
+# 💻 EDITORES Y ENTORNOS DE DESARROLLO
+# ─────────────────────────────
+.idea/
+.vscode/
+nbproject/
+
+# ─────────────────────────────
+# 🧾 ARCHIVOS COMPILADOS O GENERADOS (por frameworks o build)
+# ─────────────────────────────
+node_modules/
+dist/
+build/
+.cache/
+out/
+
+# ─────────────────────────────
+# 📜 SISTEMAS DE CONTROL DE VERSIONES SECUNDARIOS
+# ─────────────────────────────
+*.orig
