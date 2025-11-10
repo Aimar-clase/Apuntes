@@ -1,3 +1,276 @@
-h1 {
-    color: blue;
+/* styles.css - Estilos para BiblioTech */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #34495e;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"],
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background: #2980b9;
+}
+
+#btnBorrar {
+    background: #e74c3c;
+    margin-bottom: 20px;
+}
+
+#btnBorrar:hover {
+    background: #c0392b;
+}
+
+/* Mensajes */
+.mensaje {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+}
+
+.mensaje-exito {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.mensaje-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.mensaje-advertencia {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+/* Catálogo de libros */
+#catalogo {
+    grid-column: 1 / -1;
+}
+
+#lista-libros {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.libro-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.libro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.libro-card h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.libro-card .autor {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.libro-detalles p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.disponible {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.no-disponible {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.sin-disponibilidad {
+    opacity: 0.7;
+    background: #ecf0f1;
+}
+
+.fecha-registro {
+    color: #95a5a6;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* Estadísticas */
+#stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.stat {
+    text-align: center;
+    padding: 15px;
+    background: #ecf0f1;
+    border-radius: 8px;
+}
+
+.stat h3 {
+    color: #34495e;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Búsqueda */
+#buscar-input {
+    width: calc(100% - 100px);
+    padding: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#btnBuscar {
+    width: 80px;
+    margin-top: 0;
+    display: inline-block;
+}
+
+/* Resultado préstamo */
+.resultado-prestamo {
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.resultado-prestamo.exitoso {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.resultado-prestamo.advertencia {
+    background: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+}
+
+.resultado-prestamo.espera {
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+    color: #004085;
+}
+
+.sin-libros,
+.sin-resultados {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 18px;
+    padding: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    #stats-container {
+        grid-template-columns: 1fr;
+    }
+    
+    #lista-libros {
+        grid-template-columns: 1fr;
+    }
 }
