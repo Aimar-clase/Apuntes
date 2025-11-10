@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiblioTech - Gestor de Biblioteca</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/main.js" type="module" defer></script>
+</head>
+<body>
+    <header>
+        <h1>📚 BiblioTech</h1>
+    </header>
+
+    <main>
+        <!-- Sección 1: Registro de Libros -->
+        <section id="registro-libro">
+            <h2>Registrar Nuevo Libro</h2>
+            <form id="form-libro" >
+                <label for="titulo-libro">Titulo:</label>
+                <input type="text" id="titulo-libro">
+
+                <label for="autor">Autor:</label>
+                <input type="text" id="autor">
+                <label for="select-genero">Genero:</label>
+                <select name="select-genero" id="select-genero">
+                    <option value="Ficcion">Ficcion</option>
+                    <option value="No Ficcion">No Ficcion</option>
+                    <option value="Tecnico">Tecnico</option>
+                    <option value="Infantil">Infantil</option>
+                    <option value="Academico">Academico</option>
+                </select>
+                
+                <label for="isbn">ISBN:</label>
+                <input type="text" id="isbn">
+
+                <label for="año-publicacion">Año de publicacion:</label>
+                <input type="number" id="año-publicacion">
+
+                <label for="copias-disponibles">Copias disponibles:</label>
+                <input type="number" id="copias-disponibles">
+
+                <input type="submit" value="Enviar" id="btnSubmit">
+            </form>
+        </section>
+
+        <!-- Sección 2: Gestión de Préstamos -->
+        <section id="gestion-prestamos">
+            <h2>Realizar Préstamo</h2>
+            <form id="form-prestamo">
+                <label for="usuario-prestamo">Tu usuario:</label>
+                <input type="text" id="usuario-prestamo">
+
+                <select name="seleccionar-libro" id="seleccionar-libro" value="Libros">
+                    <option value="" disabled selected>Selecciona una opción</option>
+                </select>
+
+                <select name="seleccionar-dias" id="seleccionar-dias" value="Dias">
+                    <option value="7">7 Dias</option>
+                    <option value="14">14 Dias</option>
+                    <option value="21">21 Dias</option>
+                    <option value="30">30 Dias</option>
+                </select>
+                <input type="submit" name="" id="btnPrestamo" value="Realizar Préstamo">
+
+            </form>
+        </section>
+
+        <!-- Sección 3: Búsqueda y Filtros -->
+        <section id="busqueda">
+            <h2>Buscar Libros</h2>
+            <!-- Aquí irán los filtros -->
+        </section>
+
+        <!-- Sección 4: Estadísticas -->
+        <section id="estadisticas">
+            <h2>Panel de Estadísticas</h2>
+            <div id="stats-container"></div>
+        </section>
+
+        <!-- Lista de libros -->
+        <section id="catalogo">
+            <h2>Catálogo de Libros</h2>
+            <button id="btnBorrar">Borrar Libros</button>
+        </section>
+        
+    </main>
+</body>
+</html>
