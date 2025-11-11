@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Aimar\\PracticaMail\\": "src/"
+            "Aimar\\PracticaMail\\": "src/tools/"
         }
     },
     "authors": [
@@ -16,6 +16,7 @@
     ],
     "require": {
         "phpmailer/phpmailer": "^7.0",
-        "phpdocumentor/phpdocumentor": "^3.8"
+        "phpdocumentor/phpdocumentor": "^3.8",
+        "vlucas/phpdotenv": "^5.6"
     }
 }
