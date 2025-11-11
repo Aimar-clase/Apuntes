@@ -2,7 +2,7 @@
 
 export function addTaskToStorage(tarea) {
     let arrayTareas = JSON.parse(localStorage.getItem('Lista-Tareas')) || [];
-    arrayTareas.unshifht(tarea);
+    arrayTareas.unshift(tarea);
     localStorage.setItem('Lista-Tareas', JSON.stringify(arrayTareas));
 }
 

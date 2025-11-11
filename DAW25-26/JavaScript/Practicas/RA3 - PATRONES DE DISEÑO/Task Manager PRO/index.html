@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./js/main.js" type="module"></script>
+    <title>Task Manager Pro</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Añade una tarea</h1>
+            <form>
+                <label> Tarea:
+                    <input type="text" id="titulo-tarea">
+                </label>
+                <label>Descripcion:
+                    <input type="text" id="descripcion-tarea">
+                </label>
+                <label>Prioridad:
+                    <select id="prioridad-tarea">
+                        <option value="baja">Baja</option>
+                        <option value="media">Media</option>
+                        <option value="Alta">Alta</option>
+                    </select>
+                </label>
+                <input type="submit" value="Enviar" id="btnSubmitTarea">
+            </form>
+        </section>
+        <section>
+            <h1>Listado de tareas</h1>
+            <div id="lista-tareas"></div>
+        </section>
+    </main>
+</body>
+</html>
