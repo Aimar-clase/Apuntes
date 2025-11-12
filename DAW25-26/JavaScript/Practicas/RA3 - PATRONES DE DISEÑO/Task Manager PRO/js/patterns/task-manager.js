@@ -1,9 +1,10 @@
 // singleton
 'use strict';
-import { addTaskToStorage } from "../localstorage/storage.js";
+import { addErrorToStorage, addTaskToStorage, getErrors, removeErrorFromStorage, removeTaskFromStorage, getTaskFromStorage } from "../localstorage/storage.js";
 import { Task } from "../models/task.js";
-import { getDOMValues, renderTaskList } from "../ui/dom-facade.js";
+import { getDOMValues, renderTaskList, renderErrors } from "../ui/dom-facade.js";
 import { isValid } from "../validation/task-validation.js";
+import { Filtro } from "./filtro.js";
 
 export class TaskManager {
 
@@ -13,19 +14,31 @@ export class TaskManager {
     }
 
 
-    static addTask(){
+    static addTask() {
         const tarea = new Task(getDOMValues());
         const validacion = isValid(tarea);
 
-        if(validacion === true){
-        addTaskToStorage(tarea);
+        if (validacion === true) {
+            addTaskToStorage(tarea);
+            removeErrorFromStorage();
         } else {
-            alert(validacion);
+            addErrorToStorage(validacion);
         }
     }
 
-    static renderDOM(){
-        renderTaskList()
+    static removeTask(id) {
+        removeTaskFromStorage(id);
+        this.renderDOM();
+    }
+
+    static renderDOM() {
+        renderTaskList(getTaskFromStorage());
+        renderErrors(getErrors());
+    }
+
+    static searchTask(input) {
+        const tareasFiltradas = Filtro.filtrarTarea(input, getTaskFromStorage());
+        renderTaskList(tareasFiltradas);
     }
 
 

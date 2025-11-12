@@ -2,23 +2,30 @@
 
 export function addTaskToStorage(tarea) {
     let arrayTareas = JSON.parse(localStorage.getItem('Lista-Tareas')) || [];
-    arrayTareas.unshift(tarea);
+    arrayTareas.push(tarea);
     localStorage.setItem('Lista-Tareas', JSON.stringify(arrayTareas));
 }
 
 
-export function removeTask(tarea) {
-    if (JSON.parse(localStorage.getItem('Lista-Tareas'))) {
-        let arrayTareas = JSON.parse(localStorage.getItem('Lista-Tareas')) || [];
-        const inidiceTarea = arrayTareas.findIndex(elemento => JSON.stringify(elemento) === JSON.stringify(tarea));
-
-        if (inidiceTarea != -1) {
-            arrayTareas.splice(inidiceTarea, 1);
-        }
-        return arrayTareas;
-    }
+export function removeTaskFromStorage(id) {
+    let arrayTareas = JSON.parse(localStorage.getItem('Lista-Tareas'));
+    const idNumber = Number(id);
+    arrayTareas = arrayTareas.filter(objeto => objeto.id !== idNumber)
+    localStorage.setItem('Lista-Tareas', JSON.stringify(arrayTareas));
 }
 
-// export function updateTask(tarea){
+export function getTaskFromStorage() {
+    return JSON.parse(localStorage.getItem('Lista-Tareas'));
+}
 
-// }
+
+export function addErrorToStorage(error) {
+    sessionStorage.setItem('Errores', error);
+}
+
+export function removeErrorFromStorage() {
+    sessionStorage.removeItem('Errores');
+}
+export function getErrors() {
+    return sessionStorage.getItem('Errores');
+}
