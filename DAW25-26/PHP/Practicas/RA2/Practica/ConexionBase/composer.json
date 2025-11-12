@@ -1,0 +1,19 @@
+{
+    "name": "aimar/conexion-base",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Aimar\\ConexionBase\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aimar",
+            "email": "aimarmerodoa@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
