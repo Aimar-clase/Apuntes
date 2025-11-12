@@ -1,13 +1,17 @@
 'use strict';
 
 export function getDOMValues() {
-
     const titulo = document.getElementById("titulo-tarea").value;
     const descripcion = document.getElementById("descripcion-tarea").value;
     const prioridad = document.getElementById("prioridad-tarea").value;
-
     return { titulo, descripcion, prioridad };
+}
 
+export function getValuesFiltro(){
+    const estado = document.getElementById("select-filtro-estado-tarea").value;
+    const prioridad = document.getElementById("select-filtro-prioridad-tarea").value;
+
+    return { estado, prioridad };
 }
 
 export function renderErrors(error) {
@@ -51,6 +55,8 @@ export function renderTaskList(tareas) {
         divTarea.appendChild(fechaCreacion);
 
         checkTarea.type = "checkbox";
+        checkTarea.dataset.id = tarea.id
+        checkTarea.classList.add("checkCompleted");
         divTarea.appendChild(checkTarea);
 
 
@@ -61,10 +67,5 @@ export function renderTaskList(tareas) {
 
         divTarea.id = "div-tareas";
         listaTareas.appendChild(divTarea);
-
-
     });
-
-
-
 }

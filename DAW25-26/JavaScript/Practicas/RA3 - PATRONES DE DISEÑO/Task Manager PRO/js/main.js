@@ -4,10 +4,12 @@ import { TaskManager } from "./patterns/task-manager.js";
 
 const btnSubmit = document.getElementById("btnSubmitTarea");
 const listaTareas = document.getElementById("lista-tareas");
-const filtro = document.getElementById("filtro");
+const btnFiltrar = document.getElementById("btnFiltrar");
+
 
 document.addEventListener("DOMContentLoaded", function () {
     TaskManager.renderDOM();
+    
 });
 
 
@@ -19,11 +21,18 @@ if (listaTareas) {
             const idTarea = event.target.dataset.id;
             TaskManager.removeTask(idTarea);
         }
-
     });
+
+    listaTareas.addEventListener("click", function (event){
+        if (event.target.classList.contains("checkCompleted")) {
+            const idTarea = event.target.dataset.id;
+            TaskManager.changeStatus(idTarea);
+        }
+    });
+
 }
 
-filtro.addEventListener("input", function () {
-    TaskManager.searchTask(filtro.value);
-});
+btnFiltrar.addEventListener("click", TaskManager.searchTask);
+
+
 

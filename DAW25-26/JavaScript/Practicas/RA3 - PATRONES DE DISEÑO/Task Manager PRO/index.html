@@ -21,7 +21,7 @@
                     <select id="prioridad-tarea">
                         <option value="baja">Baja</option>
                         <option value="media">Media</option>
-                        <option value="Alta">Alta</option>
+                        <option value="alta">Alta</option>
                     </select>
                 </label>
                 <input type="submit" value="Enviar" id="btnSubmitTarea">
@@ -29,7 +29,20 @@
         </section>
         <section>
             <h1>Listado de tareas</h1>
-            <input type="text" id="filtro" placeholder="Buscar tarea...">
+            <label>Filtros:
+                <select id="select-filtro-estado-tarea">
+                    <option value="" selected>Estado</option>
+                    <option value="false">Incompleta</option>
+                    <option value="true">Completa</option>
+                </select>
+                <select id="select-filtro-prioridad-tarea">
+                    <option value="" selected>Prioridad</option>
+                    <option value="baja">Baja</option>
+                    <option value="media">Media</option>
+                    <option value="alta">Alta</option>
+                </select>
+            </label>
+            <input type="submit" id="btnFiltrar" value="Filtrar">
             <div id="lista-tareas"></div>
         </section>
     </main>

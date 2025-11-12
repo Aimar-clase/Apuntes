@@ -2,9 +2,9 @@
 'use strict';
 import { addErrorToStorage, addTaskToStorage, getErrors, removeErrorFromStorage, removeTaskFromStorage, getTaskFromStorage } from "../localstorage/storage.js";
 import { Task } from "../models/task.js";
-import { getDOMValues, renderTaskList, renderErrors } from "../ui/dom-facade.js";
+import { getDOMValues, renderTaskList, renderErrors, getValuesFiltro } from "../ui/dom-facade.js";
 import { isValid } from "../validation/task-validation.js";
-import { Filtro } from "./filtro.js";
+import { Filtro, FiltrarPorEstado, FiltrarPorEstadoYPrioridad, FiltrarPorPrioridad } from "./filtro.js";
 
 export class TaskManager {
 
@@ -36,10 +36,31 @@ export class TaskManager {
         renderErrors(getErrors());
     }
 
-    static searchTask(input) {
-        const tareasFiltradas = Filtro.filtrarTarea(input, getTaskFromStorage());
-        renderTaskList(tareasFiltradas);
+    static searchTask() {
+        const { estado, prioridad } = getValuesFiltro();
+        const filtro = new Filtro();
+        let tareasFiltradas;
+
+        if (estado && prioridad ) {
+            filtro.setStrategy(new FiltrarPorEstadoYPrioridad());
+            tareasFiltradas = filtro.filtrarTarea(estado, prioridad, getTaskFromStorage());
+            renderTaskList(tareasFiltradas);
+        } else if (estado) {
+            filtro.setStrategy(new FiltrarPorEstado());
+            tareasFiltradas = filtro.filtrarTarea(estado,prioridad, getTaskFromStorage());
+            renderTaskList(tareasFiltradas);
+        } else if (prioridad){
+            filtro.setStrategy(new FiltrarPorPrioridad());
+            tareasFiltradas = filtro.filtrarTarea(estado,prioridad, getTaskFromStorage());
+            renderTaskList(tareasFiltradas);
+        } else {
+            renderTaskList(getTaskFromStorage());
+        }
     }
+    
+    static changeStatus(idTarea){
+        changeStatusFromStorage(idTarea);
+        this.renderDOM;
 
-
+    }
 }

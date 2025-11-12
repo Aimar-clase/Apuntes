@@ -1,27 +1,43 @@
 // strategy
 'use strict';
+
 export class Filtro {
 
-
-    static filtrarTarea(input, tareas) {
-        if (!input || input.trim() === '') return tareas;
-        const inputLowerCase = input.toLowerCase().trim();
-
-        return tareas.filter(tarea => {
-            const estaEnTitulo = tarea.titulo.toLowerCase().includes(inputLowerCase);
-            const estaEnDescripcion = tarea.descripcion.toLowerCase().includes(inputLowerCase);
-            const estaEnPrioridad = tarea.prioridad.toLowerCase().includes(inputLowerCase);
-
-            return estaEnTitulo || estaEnDescripcion || estaEnPrioridad;
-        });
-
-
+    setStrategy(strategy) {
+        this.strategy = strategy;
     }
 
+    filtrarTarea(estado, prioridad, tareas) {
+        return this.strategy.filtro(estado, prioridad, tareas);
 
+    }
+}
 
+export class FiltrarPorEstado {
+    filtro(estado, prioridad, tareas){
+        return tareas.filter(tarea => {
+            const coincideEstado = tarea.estado.includes(estado);
+            return coincideEstado;
+        })
+    }
+}
 
+export class FiltrarPorPrioridad {
+    filtro(estado, prioridad, tareas){
+        return tareas.filter(tarea => {
+            const coincidePrioridad = tarea.prioridad.includes(prioridad);
+            return coincidePrioridad;
+        })
+    }
 
+}
 
-
+export class FiltrarPorEstadoYPrioridad {
+    filtro(estado, prioridad, tareas){
+        return tareas.filter(tarea => {
+            const coincideEstado = tarea.estado.includes(estado);
+            const coincidePrioridad = tarea.prioridad.includes(prioridad);
+            return coincideEstado && coincidePrioridad;
+        });
+    }
 }

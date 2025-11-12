@@ -6,7 +6,7 @@ export class Task {
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.prioridad = prioridad;
-        this.hecho = false;
+        this.hecho = "false";
         this.fechaDeCreacion = new Date().toLocaleDateString();
     }
 }
