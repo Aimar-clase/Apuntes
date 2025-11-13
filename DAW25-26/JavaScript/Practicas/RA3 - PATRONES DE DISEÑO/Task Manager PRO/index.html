@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="./js/main.js" type="module"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Task Manager Pro</title>
 </head>
 <body>
     <main>
-        <section>
+        <section class="seccion-formulario-tareas">
             <h1>Añade una tarea</h1>
             <form id="formulario-tarea">
                 <label> Tarea:
@@ -27,9 +28,9 @@
                 <input type="submit" value="Enviar" id="btnSubmitTarea">
             </form>
         </section>
-        <section>
+        <section class="seccion-listado-tareas">
             <h1>Listado de tareas</h1>
-            <label>Filtros:
+            <label class="label-filtros">Filtros:
                 <select id="select-filtro-estado-tarea">
                     <option value="" selected>Estado</option>
                     <option value="false">Incompleta</option>
@@ -41,9 +42,10 @@
                     <option value="media">Media</option>
                     <option value="alta">Alta</option>
                 </select>
+                <input type="submit" id="btnFiltrar" value="Filtrar">
             </label>
-            <input type="submit" id="btnFiltrar" value="Filtrar">
-            <div id="lista-tareas"></div>
+            
+            <div id="lista-tareas" class="lista-tareas"></div>
         </section>
     </main>
 </body>

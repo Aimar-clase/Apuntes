@@ -9,7 +9,6 @@ const btnFiltrar = document.getElementById("btnFiltrar");
 
 document.addEventListener("DOMContentLoaded", function () {
     TaskManager.renderDOM();
-    
 });
 
 
@@ -23,10 +22,12 @@ if (listaTareas) {
         }
     });
 
-    listaTareas.addEventListener("click", function (event){
+    listaTareas.addEventListener("click", function (event) {
         if (event.target.classList.contains("checkCompleted")) {
             const idTarea = event.target.dataset.id;
-            TaskManager.changeStatus(idTarea);
+            const isChecked = event.target.checked;
+            TaskManager.changeStatus(idTarea, isChecked);
+            TaskManager.renderDOM();
         }
     });
 

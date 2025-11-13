@@ -1,7 +1,7 @@
 'use strict';
 
 export class Task {
-    constructor( { titulo, descripcion, prioridad }) {
+    constructor({ titulo, descripcion, prioridad }) {
         this.id = Date.now();
         this.titulo = titulo;
         this.descripcion = descripcion;

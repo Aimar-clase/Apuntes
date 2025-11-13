@@ -1,40 +1,40 @@
 'use strict';
 
-export function isValid(tarea){
+export function isValid(tarea) {
     const tituloLimpio = tarea.titulo.trim();
     const descripcionLimpio = tarea.descripcion.trim();
     let errores = [];
-    if (!validTittle(tituloLimpio)){
+    if (!validTittle(tituloLimpio)) {
         errores.push("El titulo tiene que tener mas de 3 caracteres");
     }
 
-    if (!validDescription(descripcionLimpio)){
+    if (!validDescription(descripcionLimpio)) {
         errores.push("La descripcion tiene que tener mas de 3 caracteres");
     }
 
 
-    if (errores.length === 0){
+    if (errores.length === 0) {
         return true;
-    }else{
+    } else {
         return errores;
     }
-    
+
 
 }
 
-function validTittle(titulo){
+function validTittle(titulo) {
 
-    if (titulo.length <= 3){
+    if (titulo.length <= 3) {
         return false;
     }
 
     return true;
 }
 
-function validDescription(descripcion){
-    
+function validDescription(descripcion) {
 
-    if (descripcion.length <= 3){
+
+    if (descripcion.length <= 3) {
         return false;
     }
 

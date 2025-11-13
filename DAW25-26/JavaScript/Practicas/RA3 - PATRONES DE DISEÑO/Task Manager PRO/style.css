@@ -1,6 +1,85 @@
-main {
-    
-    max-width: 50%;
+body {
+    background-color: #BFBCCB;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1 {
+    color: #0F0E0E;
+}
 
+.seccion-formulario-tareas{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    
+    border: 3px solid #333232;
+    border-radius: 10px;
+    border-bottom: 3x;
+
+    padding: 5em;
+
+    width: 50%;
+    margin: 0 auto;
+}
+
+.seccion-listado-tareas{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    
+    border: 3px solid #333232;
+    border-radius: 10px;
+    border-top: 0px;
+
+    padding: 5em;
+
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.lista-tareas{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+article {
+    border: 3px solid #333232;
+    background-color: #E05263;
+    padding-left: 100px;
+    position: relative;
+}
+
+.checkCompleted {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #E05263;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.checkCompleted:checked {
+    background-color: #E05263;
+}
+
+.checkCompleted:checked::after {
+    content: '✓';
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    margin-left: 4px;
+    margin-top: -2px;
+}
+
+.label-filtros{
+    margin-bottom: 30px;
 
 }

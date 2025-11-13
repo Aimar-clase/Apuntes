@@ -14,16 +14,16 @@ export class Filtro {
 }
 
 export class FiltrarPorEstado {
-    filtro(estado, prioridad, tareas){
+    filtro(estado, prioridad, tareas) {
         return tareas.filter(tarea => {
-            const coincideEstado = tarea.estado.includes(estado);
+            const coincideEstado = tarea.hecho.includes(estado);
             return coincideEstado;
         })
     }
 }
 
 export class FiltrarPorPrioridad {
-    filtro(estado, prioridad, tareas){
+    filtro(estado, prioridad, tareas) {
         return tareas.filter(tarea => {
             const coincidePrioridad = tarea.prioridad.includes(prioridad);
             return coincidePrioridad;
@@ -33,9 +33,9 @@ export class FiltrarPorPrioridad {
 }
 
 export class FiltrarPorEstadoYPrioridad {
-    filtro(estado, prioridad, tareas){
+    filtro(estado, prioridad, tareas) {
         return tareas.filter(tarea => {
-            const coincideEstado = tarea.estado.includes(estado);
+            const coincideEstado = tarea.hecho.includes(estado);
             const coincidePrioridad = tarea.prioridad.includes(prioridad);
             return coincideEstado && coincidePrioridad;
         });
