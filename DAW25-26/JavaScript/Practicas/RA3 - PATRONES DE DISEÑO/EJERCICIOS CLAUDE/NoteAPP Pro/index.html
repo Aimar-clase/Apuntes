@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note APP Pro</title>
+    <script src="js/main.js" type="module" defer></script>
+</head>
+<body>
+    <main>
+        <section id="seccion-formulario-notas">
+            <form action="">
+                <label> Titulo:
+                    <input type="text" id="title-note">
+                </label>
+                <label>Descripcion;
+                    <input type="text" id="content-note">
+                </label>
+                <label>Categoria:
+                    <select id="category-select">
+                        <option value="Personal">Personal</option>
+                        <option value="Study">Study</option>
+                        <option value="Work">Work</option>
+                    </select>
+                </label>
+                <input type="submit" value="Submit" id="btnSubmit">
+            </form>
+        </section>
+        <section>
+            <h2>Lista de notas</h2>
+            <div id="div-note-list"></div>
+        </section>
+    </main>
+</body>
+</html>
