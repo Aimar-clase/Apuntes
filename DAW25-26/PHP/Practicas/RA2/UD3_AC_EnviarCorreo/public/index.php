@@ -25,6 +25,8 @@
     <label for="mensaje">Mensaje:</label>
     <textarea name="mensaje" id="mensaje" required></textarea>
     <br><br>
+    <input type="file">
+    <br>
 
     <input type="submit" value="Enviar">
 </form>
