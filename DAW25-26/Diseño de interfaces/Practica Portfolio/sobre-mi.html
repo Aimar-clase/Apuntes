@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce a Aimar Merodo, Desarrollador Web especializado en Desarrollo de Aplicaciones Web. Estudiante de Grado Superior en Desarrollo de Aplicaciones Web en IES Comercio.">
+    <meta name="keywords" content="Desarrollador Web, Portfolio, Desarrollo de páginas web, Desarrollo de aplicaciones web, grado superior desarrollo de aplicaciones web, Aimar Merodo">
+    <title>Sobre Mí - Aimar Merodo | Desarrollador Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'ubuntu': ['Ubuntu', 'sans-serif'],
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-orange': '#fc7c04',
+                        'primary-gold': '#e7b454',
+                        'dark-bg': '#18181b',
+                        'dark-section': '#1f1f23',
+                        'navbar-bg': '#2d2d2d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-white font-ubuntu m-0 p-0">
+
+    <header>
+        <nav class="bg-navbar-bg rounded-[50px] fixed top-5 left-1/2 -translate-x-1/2 w-auto max-w-[90%] z-[1000] px-6 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.5)]">
+            <div class="bg-transparent flex justify-between items-center gap-12 p-0 h-[50px]">
+                <a href="index.html" class="m-0 flex items-center">
+                    <img src="Images/logos/logo.png" alt="Logo Aimar Merodo - Desarrollador Web" class="h-[35px] w-auto scale-[4.5]">
+                </a>
+
+                <ul class="flex items-center gap-9 list-none m-0 p-0">
+                    <li><a href="index.html" class="text-sm font-bold text-white no-underline transition-all duration-300 hover:text-primary-orange hover:-translate-y-0.5">Inicio</a></li>
+                    <li><a href="sobre-mi.html" class="text-sm font-bold text-primary-orange no-underline transition-all duration-300 hover:text-primary-orange hover:-translate-y-0.5">Sobre Mi</a></li>
+                    <li><a href="skills.html" class="text-sm font-bold text-white no-underline transition-all duration-300 hover:text-primary-orange hover:-translate-y-0.5">Skills</a></li>
+                    <li><a href="proyectos.html" class="text-sm font-bold text-white no-underline transition-all duration-300 hover:text-primary-orange hover:-translate-y-0.5">Proyectos</a></li>
+                    <li><a href="curriculum.html" class="text-sm font-bold text-white no-underline transition-all duration-300 hover:text-primary-orange hover:-translate-y-0.5">Curriculum</a></li>
+                    <li>
+                        <a href="https://github.com/AimarMerodo" target="_blank" class="text-white transition-all duration-300 hover:text-primary-orange">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="index.html#Contacto" class="bg-white text-navbar-bg border-none rounded-[25px] px-6 py-2 text-sm font-semibold cursor-pointer transition-all duration-300 font-ubuntu hover:bg-primary-orange hover:text-white hover:-translate-y-0.5">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <aside class="fixed right-0 top-1/2 -translate-y-1/2 z-[999] flex flex-col gap-4 pr-6">
+        <a href="https://github.com/AimarMerodo" target="_blank" class="bg-navbar-bg p-4 rounded-l-2xl shadow-[0_4px_20px_rgba(0,0,0,0.5)] transition-all duration-300 hover:bg-primary-orange hover:pr-6 hover:scale-110 group">
+            <i class="fab fa-github text-3xl text-white group-hover:text-white"></i>
+        </a>
+    </aside>
+
+    <main>
+        <section id="Historia" class="bg-dark-bg min-h-screen py-24 px-[10%] pt-32">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-6xl font-bold text-center mb-6 bg-gradient-to-br from-primary-orange to-primary-gold bg-clip-text text-transparent">
+                    Sobre Mí
+                </h1>
+                <p class="text-center text-gray-400 text-xl mb-16 max-w-3xl mx-auto">
+                    Soy <strong>Aimar Merodo</strong>, un apasionado <strong>Desarrollador Web</strong> especializado en <strong>Desarrollo de Aplicaciones Web</strong>
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+                    <div>
+                        <img src="Images/programador.png" alt="Aimar Merodo - Desarrollador Web" class="w-full rounded-2xl shadow-2xl">
+                    </div>
+                    <div>
+                        <h2 class="text-4xl font-bold mb-6 text-primary-orange">Mi Historia</h2>
+                        <div class="space-y-4 text-gray-300 text-lg">
+                            <p>
+                                Mi viaje en el mundo de la tecnología comenzó con mi formación en <strong>Sistemas Microinformáticos y Redes</strong>,
+                                donde descubrí mi pasión por resolver problemas técnicos y trabajar con hardware. Sin embargo, fue el
+                                <strong>desarrollo de páginas web</strong> lo que realmente capturó mi interés.
+                            </p>
+                            <p>
+                                La transición del hardware al software fue natural para mí. Me di cuenta de que el <strong>desarrollo de aplicaciones web</strong>
+                                me permitía crear soluciones escalables y accesibles desde cualquier lugar del mundo. Esta realización me llevó
+                                a cursar el <strong>Grado Superior en Desarrollo de Aplicaciones Web</strong> en el IES Comercio.
+                            </p>
+                            <p>
+                                Desde entonces, he trabajado en proyectos reales como <strong>VHost</strong>, donde desarrollé una plataforma completa
+                                utilizando tecnologías modernas como Astro, JavaScript y Tailwind CSS. Esta experiencia me ha enseñado
+                                la importancia del código limpio, el diseño responsivo y la experiencia del usuario.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Educacion" class="bg-dark-section min-h-screen py-24 px-[10%]">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-5xl font-bold text-center mb-16 bg-gradient-to-br from-primary-orange to-primary-gold bg-clip-text text-transparent">
+                    Formación y Educación
+                </h2>
+
+                <div class="space-y-8">
+                    <div class="bg-navbar-bg rounded-2xl p-8 border-l-4 border-primary-orange hover:scale-105 transition-all duration-300">
+                        <div class="flex items-start gap-6">
+                            <div class="bg-primary-orange rounded-full p-4 flex-shrink-0">
+                                <i class="fas fa-graduation-cap text-3xl"></i>
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-2xl font-bold mb-2 text-primary-orange">Grado Superior en Desarrollo de Aplicaciones Web</h3>
+                                <p class="text-gray-400 mb-3">IES Comercio | 2024 - 2026</p>
+                                <p class="text-gray-300 mb-4">
+                                    Formación especializada en <strong>desarrollo de aplicaciones web</strong> modernas y escalables.
+                                    Aprendiendo tecnologías tanto de frontend como backend, bases de datos, y metodologías ágiles.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-primary-orange/20 text-primary-orange px-3 py-1 rounded-full text-sm">Desarrollo Web Full Stack</span>
+                                    <span class="bg-primary-orange/20 text-primary-orange px-3 py-1 rounded-full text-sm">Bases de Datos</span>
+                                    <span class="bg-primary-orange/20 text-primary-orange px-3 py-1 rounded-full text-sm">Desarrollo Frontend</span>
+                                    <span class="bg-primary-orange/20 text-primary-orange px-3 py-1 rounded-full text-sm">Desarrollo Backend</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-navbar-bg rounded-2xl p-8 border-l-4 border-primary-gold hover:scale-105 transition-all duration-300">
+                        <div class="flex items-start gap-6">
+                            <div class="bg-primary-gold rounded-full p-4 flex-shrink-0">
+                                <i class="fas fa-server text-3xl text-dark-bg"></i>
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-2xl font-bold mb-2 text-primary-gold">FP en Sistemas Microinformáticos y Redes</h3>
+                                <p class="text-gray-400 mb-3">IES Comercio | 2022 - 2024</p>
+                                <p class="text-gray-300 mb-4">
+                                    Formación técnica en infraestructura IT, redes, seguridad informática y administración de sistemas.
+                                    Esta base técnica me proporciona una comprensión profunda de cómo funcionan las aplicaciones a nivel de infraestructura.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-primary-gold/20 text-primary-gold px-3 py-1 rounded-full text-sm">Redes</span>
+                                    <span class="bg-primary-gold/20 text-primary-gold px-3 py-1 rounded-full text-sm">Linux</span>
+                                    <span class="bg-primary-gold/20 text-primary-gold px-3 py-1 rounded-full text-sm">Servidores</span>
+                                    <span class="bg-primary-gold/20 text-primary-gold px-3 py-1 rounded-full text-sm">Seguridad</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-primary-orange to-primary-gold rounded-2xl p-8 hover:scale-105 transition-all duration-300">
+                        <div class="flex items-start gap-6">
+                            <div class="bg-white/20 rounded-full p-4 flex-shrink-0">
+                                <i class="fas fa-certificate text-3xl"></i>
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-2xl font-bold mb-2">Formación Continua</h3>
+                                <p class="mb-4">
+                                    El mundo del <strong>desarrollo de páginas web</strong> está en constante evolución. Me mantengo actualizado
+                                    a través de cursos online, documentación oficial, y experimentando con nuevas tecnologías y frameworks.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Autodidacta</span>
+                                    <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Aprendizaje Continuo</span>
+                                    <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Nuevas Tecnologías</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Filosofia" class="bg-dark-bg min-h-screen py-24 px-[10%]">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-5xl font-bold text-center mb-16 bg-gradient-to-br from-primary-orange to-primary-gold bg-clip-text text-transparent">
+                    Mi Filosofía de Trabajo
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-navbar-bg rounded-2xl p-8 hover:bg-dark-section transition-all duration-300">
+                        <div class="bg-primary-orange rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                            <i class="fas fa-code text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-primary-orange">Código Limpio y Mantenible</h3>
+                        <p class="text-gray-300">
+                            Creo firmemente en escribir código que no solo funcione, sino que sea fácil de entender y mantener.
+                            El código es leído más veces de las que es escrito, por eso priorizo la claridad y la documentación.
+                        </p>
+                    </div>
+
+                    <div class="bg-navbar-bg rounded-2xl p-8 hover:bg-dark-section transition-all duration-300">
+                        <div class="bg-primary-orange rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                            <i class="fas fa-mobile-alt text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-primary-orange">Responsive First</h3>
+                        <p class="text-gray-300">
+                            En el desarrollo de páginas web modernas, el diseño responsivo no es opcional. Cada proyecto que desarrollo
+                            está optimizado para funcionar perfectamente en dispositivos móviles, tablets y escritorio.
+                        </p>
+                    </div>
+
+                    <div class="bg-navbar-bg rounded-2xl p-8 hover:bg-dark-section transition-all duration-300">
+                        <div class="bg-primary-orange rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                            <i class="fas fa-users text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-primary-orange">Enfoque en el Usuario</h3>
+                        <p class="text-gray-300">
+                            La experiencia del usuario es el corazón de cada aplicación web. Diseño interfaces intuitivas y
+                            accesibles que facilitan la vida de los usuarios finales.
+                        </p>
+                    </div>
+
+                    <div class="bg-navbar-bg rounded-2xl p-8 hover:bg-dark-section transition-all duration-300">
+                        <div class="bg-primary-orange rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                            <i class="fas fa-rocket text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-primary-orange">Rendimiento y Optimización</h3>
+                        <p class="text-gray-300">
+                            Las aplicaciones web deben ser rápidas. Me enfoco en optimizar el rendimiento, reducir los tiempos de carga
+                            y asegurar que cada línea de código contribuya a una experiencia fluida.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Intereses" class="bg-dark-section min-h-screen py-24 px-[10%]">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-5xl font-bold text-center mb-16 bg-gradient-to-br from-primary-orange to-primary-gold bg-clip-text text-transparent">
+                    Más Allá del Código
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-navbar-bg rounded-2xl p-8 text-center hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-book text-5xl text-primary-orange mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3">Aprendizaje Continuo</h3>
+                        <p class="text-gray-300">
+                            Siempre estoy explorando nuevas tecnologías, frameworks y mejores prácticas en el desarrollo de aplicaciones web.
+                        </p>
+                    </div>
+
+                    <div class="bg-navbar-bg rounded-2xl p-8 text-center hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-gamepad text-5xl text-primary-orange mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3">Videojuegos</h3>
+                        <p class="text-gray-300">
+                            Los videojuegos me inspiran a crear interfaces interactivas y experiencias de usuario envolventes.
+                        </p>
+                    </div>
+
+                    <div class="bg-navbar-bg rounded-2xl p-8 text-center hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-laptop-code text-5xl text-primary-orange mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3">Proyectos Personales</h3>
+                        <p class="text-gray-300">
+                            Experimento con nuevas ideas y tecnologías a través de proyectos personales en mi tiempo libre.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-16 bg-gradient-to-br from-primary-orange to-primary-gold rounded-2xl p-12 text-center">
+                    <h3 class="text-4xl font-bold mb-6">¿Trabajamos Juntos?</h3>
+                    <p class="text-xl mb-8 max-w-2xl mx-auto">
+                        Si buscas un <strong>desarrollador web</strong> comprometido, con sólida formación en <strong>desarrollo de aplicaciones web</strong>
+                        y pasión por crear soluciones innovadoras, ¡hablemos!
+                    </p>
+                    <div class="flex gap-4 justify-center flex-wrap">
+                        <a href="index.html#Contacto" class="bg-white text-dark-bg font-bold py-4 px-8 rounded-lg transition-all hover:scale-105 inline-flex items-center gap-2">
+                            <i class="fas fa-envelope"></i> Contáctame
+                        </a>
+                        <a href="proyectos.html" class="bg-dark-bg text-white font-bold py-4 px-8 rounded-lg transition-all hover:scale-105 inline-flex items-center gap-2">
+                            <i class="fas fa-code"></i> Ver Proyectos
+                        </a>
+                        <a href="CV_AimarMerodoAlba.pdf" download class="bg-transparent border-2 border-white text-white font-bold py-4 px-8 rounded-lg transition-all hover:bg-white hover:text-dark-bg inline-flex items-center gap-2">
+                            <i class="fas fa-download"></i> Descargar CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-navbar-bg border-t-[3px] border-primary-orange py-8 px-[10%]">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400 text-sm mb-2">
+                &copy; 2024 Aimar Merodo - Desarrollador Web | Portfolio
+            </p>
+            <p class="text-gray-500 text-xs mb-2">
+                Estudiante de Grado Superior en Desarrollo de Aplicaciones Web - IES Comercio
+            </p>
+            <p class="text-gray-500 text-xs">
+                <a href="mapa.html" class="hover:text-primary-orange transition-colors">Mapa del Sitio</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
