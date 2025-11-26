@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carga de Energía</title>
+    <!-- Vinculamos la hoja de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fuentes de Google Fonts para un diseño más premium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 
+        CONTENEDOR PRINCIPAL
+        Usamos un contenedor para centrar y limitar el ancho del contenido.
+    -->
+    <div class="app-container">
+        
+        <!-- 
+            SECCIÓN 1: LOGIN / REGISTRO
+            Esta sección se muestra al inicio si no hay usuario logueado.
+        -->
+        <section id="login-screen" class="screen active">
+            <div class="card">
+                <h1>Carga de Energía</h1>
+                <p class="subtitle">Mantén pulsada la tecla indicada para cargar la batería.</p>
+                
+                <!-- Formulario de Login -->
+                <div id="login-form-container">
+                    <h2>Iniciar Sesión</h2>
+                    <form id="login-form">
+                        <div class="input-group">
+                            <label for="login-user">Usuario</label>
+                            <input type="text" id="login-user" placeholder="Tu nombre de usuario" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="login-pass">Contraseña</label>
+                            <input type="password" id="login-pass" placeholder="Tu contraseña" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                        <p class="switch-form">¿No tienes cuenta? <a href="#" id="show-register">Regístrate</a></p>
+                    </form>
+                </div>
+
+                <!-- Formulario de Registro (oculto por defecto) -->
+                <div id="register-form-container" class="hidden">
+                    <h2>Crear Cuenta</h2>
+                    <form id="register-form">
+                        <div class="input-group">
+                            <label for="reg-user">Nuevo Usuario</label>
+                            <input type="text" id="reg-user" placeholder="Elige un nombre" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="reg-pass">Contraseña</label>
+                            <input type="password" id="reg-pass" placeholder="Elige una contraseña" required>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Registrarse</button>
+                        <p class="switch-form">¿Ya tienes cuenta? <a href="#" id="show-login">Inicia Sesión</a></p>
+                    </form>
+                </div>
+                
+                <div id="auth-message" class="message"></div>
+            </div>
+        </section>
+
+        <!-- 
+            SECCIÓN 2: JUEGO
+            Aquí ocurre la acción principal.
+        -->
+        <section id="game-screen" class="screen hidden">
+            <header class="game-header">
+                <div class="user-info">Jugador: <span id="player-name">---</span></div>
+                <div class="score-info">Puntos: <span id="score">0</span></div>
+                <div class="lives-info">Vidas: <span id="lives">3</span></div>
+            </header>
+            
+            <!-- Área donde caen las palabras -->
+            <div id="game-area" class="game-area">
+                <!-- Las palabras se inyectarán aquí mediante JS -->
+            </div>
+
+            <!-- Zona de input del usuario -->
+             <div class="input-area" style="justify-content: center;">
+                <div class="best-score-display">Récord: <span id="best-score-display">0</span></div>
+            </div>
+        </section>
+
+        <!-- 
+            SECCIÓN 3: GAME OVER
+            Resumen de la partida.
+        -->
+        <section id="game-over-screen" class="screen hidden">
+            <div class="card game-over-card">
+                <h1>¡Juego Terminado!</h1>
+                <div class="stats">
+                    <p>Puntuación Final: <span id="final-score" class="highlight">0</span></p>
+                    <p>Mejor Puntuación: <span id="best-score-final">0</span></p>
+                </div>
+                <div class="actions">
+                    <button id="restart-btn" class="btn btn-primary">Jugar de Nuevo</button>
+                    <button id="logout-btn" class="btn btn-outline">Cerrar Sesión</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- 
+        IMPORTANTE: Cargamos los scripts en orden secuencial.
+        Al no usar "type=module" (para evitar errores CORS en local),
+        el orden de carga es CRÍTICO.
+    -->
+    <script src="js/utils.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/battery-factory.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
