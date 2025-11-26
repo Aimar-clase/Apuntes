@@ -32,7 +32,8 @@ export class DomFacade {
     static createWordInScreen(word){
         const parrafoPalabra = document.createElement("p");
         parrafoPalabra.style.position = "absolute";
-        
+        // parrafo.style.top = "50px";
+        parrafo.style.left = "100px";
     }
 
 
