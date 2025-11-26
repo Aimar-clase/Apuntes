@@ -10,7 +10,20 @@
     <title>Log in</title>
 </head>
 <body>
-<h1>Hola</h1>
-
+<main>
+    <form action="procesar.php" method="post">
+        <h1>Iniciar sesion</h1>
+        <label>
+            Usuario
+            <input type="text" name="usuario">
+        </label>
+        <br>
+        <label>
+            Contraseña
+            <input type="password" name="password">
+        </label>
+        <input type="submit" value="Enviar">
+    </form>
+</main>
 </body>
 </html>

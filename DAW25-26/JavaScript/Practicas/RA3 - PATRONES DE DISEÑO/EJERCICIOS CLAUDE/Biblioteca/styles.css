@@ -1,4 +1,4 @@
-/* styles.css - Estilos para BiblioTech */
+
 
 * {
     margin: 0;
@@ -49,7 +49,7 @@ section h2 {
     border-bottom: 2px solid #3498db;
 }
 
-/* Formularios */
+
 form {
     display: flex;
     flex-direction: column;
@@ -98,7 +98,7 @@ button:hover {
     background: #c0392b;
 }
 
-/* Mensajes */
+
 .mensaje {
     padding: 10px;
     border-radius: 5px;
@@ -124,7 +124,7 @@ button:hover {
     border: 1px solid #ffeeba;
 }
 
-/* Catálogo de libros */
+
 #catalogo {
     grid-column: 1 / -1;
 }
@@ -186,7 +186,7 @@ button:hover {
     margin-top: 10px;
 }
 
-/* Estadísticas */
+
 #stats-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -213,7 +213,7 @@ button:hover {
     color: #3498db;
 }
 
-/* Búsqueda */
+
 #buscar-input {
     width: calc(100% - 100px);
     padding: 10px;
@@ -227,7 +227,7 @@ button:hover {
     display: inline-block;
 }
 
-/* Resultado préstamo */
+
 .resultado-prestamo {
     padding: 15px;
     border-radius: 8px;
@@ -260,7 +260,7 @@ button:hover {
     padding: 40px;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     main {
         grid-template-columns: 1fr;

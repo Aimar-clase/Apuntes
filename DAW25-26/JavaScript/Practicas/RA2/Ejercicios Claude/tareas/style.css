@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +6,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Layout general */
+
 body {
     background: #f6f6f6;
     padding: 20px;
 }
 
-/* Formulario */
+
 #seccion-formulario form {
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@ body {
     background: #005fcc;
 }
 
-/* Lista de tareas */
+
 #seccion-tareas {
     max-width: 600px;
     margin-top: 10px;
@@ -55,7 +55,7 @@ body {
     gap: 12px;
 }
 
-/* Tarjetas de tarea */
+
 .tarea {
     background: white;
     padding: 15px;
@@ -65,10 +65,10 @@ body {
     flex-direction: column;
     gap: 4px;
     position: relative;
-    border-left: 8px solid #bbbbbb; /* color por defecto */
+    border-left: 8px solid #bbbbbb; 
 }
 
-/* Prioridades */
+
 .prioridad-baja {
     border-color: #2ecc71 !important;
 }
@@ -79,7 +79,7 @@ body {
     border-color: #e74c3c !important;
 }
 
-/* Checkbox */
+
 .tarea input[type="checkbox"] {
     position: absolute;
     right: 15px;
@@ -88,7 +88,7 @@ body {
     cursor: pointer;
 }
 
-/* Tarea completada */
+
 .tarea.completed {
     opacity: 0.6;
     text-decoration: line-through;

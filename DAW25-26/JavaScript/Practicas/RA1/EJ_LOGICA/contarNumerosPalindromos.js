@@ -1,6 +1,4 @@
-/*
-Dado un número entero positivo n, devuelve la cantidad de números en el rango [1, n] que son "números espejo".
-*/
+
 
 
 function esPalindromo(cadena){
@@ -36,4 +34,4 @@ function contarPalindromos(numero){
     }
     return contador;
 }
-console.log(contarPalindromos(111)); // Total: 10 números
+console.log(contarPalindromos(111)); 

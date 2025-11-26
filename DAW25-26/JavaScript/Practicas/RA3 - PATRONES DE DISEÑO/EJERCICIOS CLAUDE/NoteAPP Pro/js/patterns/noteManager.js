@@ -25,19 +25,19 @@ export class NoteManager {
         const allNotes = StorageManager.getNotes();
         DomFacade.renderNoteList(allNotes);
     }
-    // updateNote() {
+    
 
-    // }
-    // removeNote() {
+    
+    
 
-    // }
+    
 
-    // searchNotes() {
+    
 
-    // }
-    // filter() {
+    
+    
 
-    // }
+    
 
 
 }

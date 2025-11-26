@@ -62,7 +62,7 @@ let elemento4 = document.querySelector("div > p");
 ```
 ```html
 <p class="miClase">Primer párrafo</p>
-<p class="miClase">Segundo párrafo</p> <!-- Este NO se selecciona -->
+<p class="miClase">Segundo párrafo</p> 
 ```
 
 > [!info] 📝 Selectores CSS
@@ -85,7 +85,7 @@ elementos.forEach(function(elemento) {
 <p class="miClase">Primer párrafo</p>
 <p class="miClase">Segundo párrafo</p>
 <p class="miClase">Tercer párrafo</p>
-<!-- Los 3 se seleccionan -->
+
 ```
 
 ---
@@ -249,7 +249,7 @@ lista.appendChild(nuevoItem);
 <ul id="miLista">
     <li>Item 1</li>
     <li>Item 2</li>
-    <!-- El nuevo <li> se añade aquí -->
+    
 </ul>
 ```
 
@@ -510,13 +510,13 @@ buscador.addEventListener("input", function() {
 > [!tip] 📍 Ubicación del script
 > Coloca tu `<script>` al **final del body** o usa `defer` en el `<head>` para asegurar que el DOM esté cargado.
 ```html
-<!-- Opción 1: Al final del body -->
+
 <body>
-    <!-- Tu HTML -->
+    
     <script src="script.js"></script>
 </body>
 
-<!-- Opción 2: En el head con defer -->
+
 <head>
     <script src="script.js" defer></script>
 </head>

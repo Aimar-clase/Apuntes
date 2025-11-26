@@ -1,5 +1,5 @@
-// models/Prestamo.js
-// Clase Prestamo - Define la estructura de un préstamo
+
+
 
 export class Prestamo {
     constructor(libroId, usuario, diasPrestamo) {
@@ -13,14 +13,14 @@ export class Prestamo {
         this.devuelto = false;
     }
 
-    // Calcula la fecha de devolución
+    
     calcularFechaDevolucion() {
         const fecha = new Date();
         fecha.setDate(fecha.getDate() + this.diasPrestamo);
         return fecha;
     }
 
-    // Genera un evento aleatorio para el préstamo
+    
     generarEventoAleatorio() {
         const random = Math.random();
 
@@ -45,12 +45,12 @@ export class Prestamo {
         }
     }
 
-    // Verifica si el préstamo está vencido
+    
     estaVencido() {
         return new Date() > this.fechaDevolucion && !this.devuelto;
     }
 
-    // Calcula días restantes para la devolución
+    
     diasRestantes() {
         if (this.devuelto) return 0;
 
@@ -61,7 +61,7 @@ export class Prestamo {
         return dias;
     }
 
-    // Marca el préstamo como devuelto
+    
     marcarComoDevuelto() {
         this.devuelto = true;
         this.fechaDevolucionReal = new Date();

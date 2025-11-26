@@ -1,11 +1,11 @@
-// Subcadena más Larga sin Caracteres Repetidos
-// LeetCode #3
-// Descripción:
-// Dada una cadena s, encuentra la longitud de la subcadena más larga que
-// no tenga caracteres repetidos.
-// Objetivo:
-// Devolver la longitud máxima de una subcadena con todos los caracteres
-// únicos.
+
+
+
+
+
+
+
+
 
 
 
@@ -36,7 +36,7 @@ function noRepetidos(s){
     return contadorMaximo + " " + cadenaMaxima;
 }
 console.log(noRepetidos("abcabcbb"));
-console.log(noRepetidos("pwwkew"));  // esperado: 3 ("wke")
-console.log(noRepetidos("aab"));    // esperado: 2 ("ab")
-console.log(noRepetidos("dvdf"));   // esperado: 3 ("vdf")
+console.log(noRepetidos("pwwkew"));  
+console.log(noRepetidos("aab"));    
+console.log(noRepetidos("dvdf"));   
 

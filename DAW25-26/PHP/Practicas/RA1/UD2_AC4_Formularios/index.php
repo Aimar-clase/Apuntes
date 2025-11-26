@@ -14,7 +14,7 @@
 
         <div class="container">
             <?php if(isset($mensajeError)): ?>
-                <div style="text-align: center; padding: 15px; background: #d4edda; color: #155724; border-radius: 8px; max-width: 450px; margin: 0 auto 20px auto;">
+                <div style="text-align: center; padding: 15px; background:
             <?php echo $mensajeError; ?>
                 </div>
             <?php endif; ?>

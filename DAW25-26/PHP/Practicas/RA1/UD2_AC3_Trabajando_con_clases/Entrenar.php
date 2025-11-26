@@ -14,14 +14,14 @@ class Entrenar extends Hobby implements Acciones {
         $this->ejercicio = $ejercicio;
         $this->tiempo = $tiempo;
         $this->fechaFinalizacion = $fechaCreacion;
-        $this->ayuda = new Ayuda(); 
+        $this->ayuda = new Ayuda();
         self::$totalEntrenamientos++;
     }
 
     public function __destruct(){
         echo "Eliminando el ejercicio... " .$this->ejercicio ."<br>";
     }
-    
+
     public function __toString(){
         echo "datos : "
         ."Nombre: " .$this->nombre
@@ -30,7 +30,7 @@ class Entrenar extends Hobby implements Acciones {
         ." Fecha: " .$this->fechaFinalizacion;
     }
 
-    // get de la variable constante Y statica
+
     public static function getEjercicioMinimo() {
         return self::ejercicioMinimoSemanal;
     }
@@ -39,17 +39,17 @@ class Entrenar extends Hobby implements Acciones {
         return self::$totalEntrenamientos;
     }
 
-        
+
     public static function setTotalEntrenamientos($valor) {
         self::$totalEntrenamientos = $valor;
     }
 
-    
+
     public static function incrementarTotal() {
         self::$totalEntrenamientos++;
     }
 
-    
+
     public static function resetearTotal() {
         self::$totalEntrenamientos = 0;
     }
@@ -88,7 +88,7 @@ class Entrenar extends Hobby implements Acciones {
     public function settiempo($tiempo){
         $this->tiempo = $tiempo;
     }
-    
+
     public function getfechaFinalizacion(){
         return $this->fechaFinalizacion;
     }

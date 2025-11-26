@@ -17,7 +17,7 @@
 *{box-sizing:border-box}
 html,body{height:100%}
 
-/* ======== BODY & LAYOUT ======== */
+
 .vh-body{
     margin:0;
     font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
@@ -35,7 +35,7 @@ html,body{height:100%}
     width:min(920px, 100%);
 }
 
-/* ======== TITLES ======== */
+
 .vh-title{
     font-size:clamp(28px, 3.5vw, 40px);
     margin:0 0 32px 0;
@@ -50,7 +50,7 @@ html,body{height:100%}
     text-align:center;
 }
 
-/* ======== FORM ======== */
+
 .vh-form{
     background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.0));
     border:1px solid var(--border);
@@ -123,7 +123,7 @@ input::-webkit-inner-spin-button{
 .vh-btn:hover{ filter: brightness(1.05); }
 .vh-btn:active{ transform: translateY(1px); }
 
-/* ======== LINKS ======== */
+
 .vh-link{
     color:var(--primary);
     text-underline-offset:3px;
@@ -139,7 +139,7 @@ input::-webkit-inner-spin-button{
     margin-top:12px;
 }
 
-/* ======== TABLES ======== */
+
 .vh-table{
     width:100%;
     border-collapse:collapse;
@@ -159,7 +159,7 @@ input::-webkit-inner-spin-button{
     text-align:left;
 }
 
-/* ======== BADGES / UTILITIES ======== */
+
 .vh-badge{
     display:inline-block;
     padding:6px 10px;
@@ -172,12 +172,12 @@ input::-webkit-inner-spin-button{
 .vh-badge.warn{ background: rgba(245,158,11,.15); color:#fcd34d; }
 .vh-badge.danger{ background: rgba(239,68,68,.15); color:#fca5a5; }
 
-/* ======== TEXT & SECTIONS ======== */
+
 .vh-section{ margin:20px 0; }
 .vh-footer{ margin-top:40px; color:var(--muted); font-size:14px; text-align:center; }
 .vh-paragraph{ color:#cbd5e1; }
 
-/* ======== ERROR & EMPTY STATES ======== */
+
 .vh-error{
     border:1px solid rgba(239,68,68,.35);
     background: rgba(239,68,68,.08);
@@ -195,13 +195,13 @@ input::-webkit-inner-spin-button{
     text-align:center;
 }
 
-/* ======== RESPONSIVE: Mobile ======== */
+
 @media (max-width: 520px){
     .vh-form{ padding:18px; }
     .vh-btn{ width:100%; }
 }
 
-/* ======== RESPONSIVE: 13.5" Laptop Optimization ======== */
+
 @media (min-width: 1200px) and (max-width: 1600px){
     .vh-body{
         padding: 40px 24px;
@@ -238,7 +238,7 @@ input::-webkit-inner-spin-button{
     }
 }
 
-/* Fine-tune for 3:2 aspect ratios */
+
 @media (min-width: 1200px) and (max-width: 1600px) and (min-aspect-ratio: 3/2){
     .vh-main, .vh-div{
         width: min(960px, 92%);
@@ -249,7 +249,7 @@ input::-webkit-inner-spin-button{
     .vh-title{ letter-spacing: 0.2px; }
 }
 
-/* Slight touch target boost for medium DPI laptops */
+
 @media (pointer: coarse) and (min-width: 1200px) and (max-width: 1600px){
     .vh-btn{ padding: 14px 20px; }
     .vh-input, .vh-select, .vh-textarea{ padding: 14px 18px; }

@@ -1,4 +1,4 @@
-// strategy
+
 'use strict';
 
 export class Filtro {

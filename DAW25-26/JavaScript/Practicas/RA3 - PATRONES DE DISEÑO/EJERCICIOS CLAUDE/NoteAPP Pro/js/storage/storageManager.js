@@ -12,9 +12,9 @@ export class StorageManager {
         return JSON.parse(localStorage.getItem('NoteList')) || [];
     }
 
-    // static removeNote() {
+    
 
-    // }
+    
 
 
 }

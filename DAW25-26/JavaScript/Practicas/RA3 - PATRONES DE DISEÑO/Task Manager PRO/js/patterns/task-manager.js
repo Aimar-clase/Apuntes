@@ -1,4 +1,4 @@
-// singleton y a la vez es un factory pattern
+
 'use strict';
 import { StorageManager } from "../localstorage/storage.js";
 import { Task } from "../models/task.js";
