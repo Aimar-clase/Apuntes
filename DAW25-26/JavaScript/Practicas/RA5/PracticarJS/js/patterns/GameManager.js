@@ -17,6 +17,7 @@ export class GameManager {
 
     displayRandomWordInScreen(){
         const word = this.randomWord();
+        
     }
 
 
