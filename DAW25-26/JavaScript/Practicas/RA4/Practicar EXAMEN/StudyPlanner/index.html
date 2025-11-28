@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <script type="module" src="js/main.js" defer></script>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Registro de tareas</h1>
+            <form>
+                <label>Descripcion
+                    <input type="text" id="descripcion-tarea">
+                </label>
+
+                <label>Asignatura
+                    <select id="select-asignatura">
+                        <option value="Cliente">Cliente</option>
+                        <option value="Servidor">Servidor</option>
+                        <option value="Diseño">Diseño</option>
+                        <option value="Despliegue">Despliegue</option>
+                    </select>
+                </label>
+
+                <label>Prioridad
+                    <select id="select-prioridad">
+                        <option value="Alta">Alta</option>
+                        <option value="Media">Media</option>
+                        <option value="Baja">Baja</option>
+                    </select>
+                </label>
+
+                <input type="submit" id="btnSubmit" value="Crear Tarea">
+
+            </form>
+        </section>
+        <section>
+            <h1>Estadisticas</h1>
+        </section>
+        <section>
+            <H1>Lista de tareas</H1>
+
+            <div id="contenedor-tareas"></div>
+        </section>
+    </main>
+</body>
+</html>

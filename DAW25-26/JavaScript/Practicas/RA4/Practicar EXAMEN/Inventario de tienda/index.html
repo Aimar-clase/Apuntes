@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <script type="module" src="js/main.js" defer></script>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Panel de alta</h1>
+            <form>
+                <label>Nombre del producto
+                    <input type="text" id="nombre-producto">
+                </label>
+                <label>Categoria
+                    <select id="select-categoria">
+                        <option value="Perifericos">Perifericos</option>
+                        <option value="Componentes">Componentes</option>
+                        <option value="Monitores">Monitores</option>
+                        <option value="Cables">Cables</option>
+                    </select>
+                </label>
+                <label>Precio
+                    <input type="number" id="precio-producto">
+                </label>
+                <label>Cantidad
+                    <input type="number" id="cantidad-producto">
+                </label>
+                <input type="submit" id="btnSubmit" value="Registrar">
+            </form>
+        </section>
+        <section>
+            <h1>Resumen</h1>
+        </section>
+        <section>
+            <h1>Listado</h1>
+            <div id="div-listado">
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>

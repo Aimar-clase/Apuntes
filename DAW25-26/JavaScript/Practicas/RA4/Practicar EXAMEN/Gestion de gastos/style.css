@@ -1,0 +1,13 @@
+.btnBorrar{
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    width: 10%;
+    padding: 1%;
+}
+
+.btnBorrar:hover{
+    background-color: #e97575;
+}

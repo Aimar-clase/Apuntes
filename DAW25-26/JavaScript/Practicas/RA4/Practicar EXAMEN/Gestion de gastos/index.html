@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de gastos</title>
+    <script type="module" src="js/main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="Registro-Gastos">
+            <h1>Registro de gastos</h1>
+            <form id="Formulario-Gastos">
+                <label>Concepto
+                    <input type="text" id="concepto" placeholder="Ej: Cena con amigos">
+                </label>
+                <label>Categoria
+                    <select id="categoria">
+                        <option value="Alimentacion">Alimentacion</option>
+                        <option value="Transporte">Transporte</option>
+                        <option value="Ocio">Ocio</option>
+                        <option value="Hogar">Hogar</option>
+                    </select>
+                </label>
+
+                <label>Importe
+                    <input type="number" id="importe">
+                </label>
+                <input type="submit" id="btnSubmit">
+            </form>
+        </section>
+        <section>
+            <h1>Panel de estadisticas</h1>
+            <div id="contenedor-estadisticas">
+
+            </div>
+        </section>
+        <section>
+            <h1>Historial de gastos</h1>
+            <label>Filtro: 
+                <input type="text" id="filtro">
+            </label>
+            <div id="contenedor-gastos">
+
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

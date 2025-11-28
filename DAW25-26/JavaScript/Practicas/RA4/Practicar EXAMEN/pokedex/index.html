@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <main>
+        <section id="insertarPokemon">
+
+            <h1>Inserta un pokemon</h1>
+            <div id="div-formulario">
+                <form>
+                    <label>Nombre
+                        <input type="text" id="nombrePokemon">
+                    </label>
+
+                    <select id="tipoPokemon">
+                        <option value="Fuego">Fuego</option>
+                        <option value="Agua">Agua</option>
+                        <option value="Planta">Planta</option>
+                    </select>
+
+                    <label>Nivel
+                        <input type="number" id="nivelPokemon">
+                    </label>
+                    
+                    <input type="submit" id="btnEnviar">
+                </form>
+            </div>
+
+        </section>
+        <section>
+            <h1>Estadisticas</h1>
+            <div id="div-estadisticas">
+
+            </div>
+        </section>
+        <section>
+            <h1>Pokemons</h1>
+            <div id="div-pokemons">
+
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>
