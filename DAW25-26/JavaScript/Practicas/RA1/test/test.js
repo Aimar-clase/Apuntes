@@ -3,4 +3,4 @@ function elementoAleatorio(array) {
 }
 
 const colores = ["rojo", "verde", "azul", "amarillo"];
-console.log(elementoAleatorio(colores)); // Color aleatorio
+console.log(elementoAleatorio(colores)); 

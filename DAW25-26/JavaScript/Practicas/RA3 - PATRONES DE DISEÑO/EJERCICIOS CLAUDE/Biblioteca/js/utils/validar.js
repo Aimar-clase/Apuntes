@@ -6,7 +6,7 @@ const errores = {
     copias: "Las copias no pueden ser menores que 1 y no pueden superar las 10 copias"
 }
 
-export function esValido(libroObjeto) { // un objeto
+export function esValido(libroObjeto) { 
     const erroresActivos = [];
     if (!validarTitulo(libroObjeto.titulo)) {
         erroresActivos.push(errores.titulo);

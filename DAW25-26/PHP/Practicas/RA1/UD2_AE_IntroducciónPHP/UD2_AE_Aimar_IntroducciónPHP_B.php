@@ -1,12 +1,12 @@
 <?php
-//B) Genera una estructura para que haya al menos una clave cuyo valor represente uno de estos tipos de datos: 
-//cadena, entero, decimal fecha.
 
-// Genera un catálogo de N entidades de forma aleatoria, donde N es una constante PHP definida correctamente. Para ello:
-// B.1) Si el tipo de dato es cadena, tendrá entre 1 y 10 caracteres.
-// B.2) Si el tipo de dato es entero, deberá estar comprendido entre 3 y 8 dígitos.
-// B.3) Si el tipo de dato es decimal, la parte entera deberá tener entre 1 y 3 dígitos, y la parte decimal entre 1 y 5 dígitos
-// B.4) Si el tipo de dato es tipo fecha, deberá estar comprendida entre el 01/01/2025 y el 30/09/2025
+
+
+
+
+
+
+
 
 define("N", 5);
 

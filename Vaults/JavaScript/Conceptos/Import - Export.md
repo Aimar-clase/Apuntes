@@ -183,7 +183,7 @@ Para usar `import/export` en el navegador, **debes** añadir `type="module"` al 
 <body>
     <h1>Ejemplo de Módulos</h1>
 
-    <!-- ✅ Con type="module" -->
+    
     <script type="module" src="main.js"></script>
 </body>
 </html>
@@ -212,7 +212,7 @@ export function restar(a, b) {
 
 ### ❌ Forma incorrecta (sin type="module")
 ```html
-<!-- ❌ SIN type="module" NO FUNCIONARÁ -->
+
 <script src="main.js"></script>
 ```
 
@@ -247,7 +247,7 @@ proyecto/
 <body>
     <h1>Proyecto con Módulos</h1>
     
-    <!-- Solo importas el archivo principal -->
+    
     <script type="module" src="js/main.js"></script>
 </body>
 </html>
@@ -497,10 +497,10 @@ console.log(secreto);    // ❌ Error: secreto is not defined
 
 ### ❌ Error 1: Olvidar type="module"
 ```html
-<!-- ❌ NO FUNCIONA -->
+
 <script src="main.js"></script>
 
-<!-- ✅ FUNCIONA -->
+
 <script type="module" src="main.js"></script>
 ```
 

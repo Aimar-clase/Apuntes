@@ -5,8 +5,8 @@ function productoDigito(num){
     if (num < 10) return 0;
 
     while (numeroString.length > 1){
-        let arrayDigitos = [];  // ✓ Dentro del while
-        let digito = 1;          // ✓ Dentro del while
+        let arrayDigitos = [];  
+        let digito = 1;          
         
         contadorPasos++;
         

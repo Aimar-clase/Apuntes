@@ -1,14 +1,4 @@
-/*
 
-Escriba una función que tome un número decimal como entrada, y
-
-devuelva el número de bits que son iguales a uno en la
-
-representación binaria de ese número. Comprueba que la entrada no
-
-sea negativa.
-
-*/
 
 function contarBinario(decimal) {
   if (decimal >= 0) {

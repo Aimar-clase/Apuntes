@@ -1,4 +1,4 @@
-// recibe un objeto
+
 export function almacenarTarea(tarea) {
 
     let arrayTarea = JSON.parse(localStorage.getItem('tareas')) || [];

@@ -1,8 +1,8 @@
-// Descripción:
-// Dado un arreglo de enteros nums, devuelve todos los tríos únicos [a, b,
-// c] tales que a + b + c == 0.
-// Objetivo:
-// Encontrar todos los conjuntos únicos de tres números cuya suma sea cero.
+
+
+
+
+
 
 function sumanCero(array){
 

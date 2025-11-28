@@ -24,22 +24,22 @@ class Leer extends Hobby implements Acciones {
         $this->tiempoMinimo = $minutos;
     }
 
-    
+
     public function setTiempoMaximo($minutos) {
         $this->tiempoMaximo = $minutos;
     }
 
-    
+
     public function getTiempoMinimo() {
         return $this->tiempoMinimo;
     }
 
-    
+
     public function getTiempoMaximo() {
         return $this->tiempoMaximo;
     }
 
-    
+
     public function registrarTiempo($minutos) {
         $this->tiempoDedicado += $minutos;
     }
@@ -48,7 +48,7 @@ class Leer extends Hobby implements Acciones {
         return $this->tiempoDedicado;
     }
 
-    
+
     public function iniciar(){
         echo "Comenzando a leer...";
     }

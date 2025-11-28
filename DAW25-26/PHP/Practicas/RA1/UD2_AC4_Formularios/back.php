@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['formularioEnviado']) )
     $nombre = $_POST['nombre'];
     $ejercicio = $_POST['ejercicio'];
     $tiempo = (INT) $_POST['tiempo'];
-    $fecha = $_POST['fecha'];   
+    $fecha = $_POST['fecha'];
 
 
     if(!empty($_POST['nombre']) && !empty($_POST['ejercicio']) && !empty($_POST['tiempo']) && !empty($_POST['fecha'])){

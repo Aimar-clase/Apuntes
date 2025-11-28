@@ -1,14 +1,14 @@
 <div id="top">
 
-<!-- HEADER STYLE: CLASSIC -->
+
 <div align="center">
 
 # <code>❯ Apuntes DAW</code>
 
 <em>Repositorio de apuntes</em>
 
-<!-- BADGES -->
-<!-- local repository, no metadata badges. -->
+
+
 
 <em>Built with the tools and technologies:</em>
 

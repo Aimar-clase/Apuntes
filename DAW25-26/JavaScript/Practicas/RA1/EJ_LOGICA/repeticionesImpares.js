@@ -1,10 +1,4 @@
-/*
 
-Dada un array de enteros, encuentra todo los números que aparecen
-
-un número impar de veces.
-
- */
 
 function repeticionesNumero(array) {
   let contador = 0;

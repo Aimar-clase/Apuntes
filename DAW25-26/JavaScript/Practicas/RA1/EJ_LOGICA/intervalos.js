@@ -1,10 +1,10 @@
-// Descripción:
-// Se te da un arreglo de intervalos, donde cada intervalo es [inicio, fin].
-// Debes fusionar todos los intervalos que se superponen y devolver el
-// resultado como un nuevo arreglo.
-// Objetivo:
-// Combinar los intervalos superpuestos en intervalos continuos más
-// grandes.
+
+
+
+
+
+
+
 
 
 function intervalos(array){

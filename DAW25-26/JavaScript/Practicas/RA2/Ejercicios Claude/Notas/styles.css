@@ -106,7 +106,7 @@ select {
     transform: translateY(0);
 }
 
-/* Responsive */
+
 @media (max-width: 600px) {
     .form-wrapper {
         padding: 30px 20px;

@@ -1,22 +1,4 @@
-/*
 
-🧠 3. Sudoku Validator
-
-  
-
-Dado un tablero de Sudoku 9x9 (array bidimensional), verifica si cumple las reglas de Sudoku:
-
-  
-
-Cada fila debe tener los números del 1 al 9 sin repetirse.
-
-  
-
-Cada columna debe tener los números del 1 al 9 sin repetirse.
-
-  
-
-Cada cuadrante 3x3 debe tener los números del 1 al 9 sin repetirse. */
 
 function validarSudoku(tablero) {
   let primeraRegla = seDuplica(tablero);
@@ -135,11 +117,11 @@ const sudokuCorrecto = [
 const sudokuIncorrecto = [
   [5, 3, 4, 6, 7, 8, 9, 1, 2],
 
-  [6, 7, 6, 1, 9, 5, 3, 4, 8], // ← dos 6 en la fila
-  [1, 9, 8, 3, 4, 2, 5, 9, 7], // ← dos 9 en la columna 8
+  [6, 7, 6, 1, 9, 5, 3, 4, 8], 
+  [1, 9, 8, 3, 4, 2, 5, 9, 7], 
   [8, 5, 9, 7, 6, 1, 4, 2, 3],
 
-  [4, 2, 5, 8, 5, 3, 7, 9, 1], // ← dos 5 en el bloque central
+  [4, 2, 5, 8, 5, 3, 7, 9, 1], 
   [7, 1, 3, 9, 2, 4, 8, 5, 6],
 
   [9, 6, 1, 5, 3, 7, 2, 8, 4],

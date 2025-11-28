@@ -1,12 +1,4 @@
-/*
 
-Haz una función que como parámetro reciba un array de números y
-
-obtenga el número que menos repeticiones haya tenido. En caso de
-
-empate devuelve el número más pequeño.
-
-*/
 
 function repeticionesNumero(array) {
   let contador = 0;

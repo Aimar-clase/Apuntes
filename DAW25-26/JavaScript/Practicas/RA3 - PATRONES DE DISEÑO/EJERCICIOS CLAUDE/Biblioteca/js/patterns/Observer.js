@@ -1,14 +1,14 @@
-// patterns/Observer.js
-// Patrón Observer - Permite que objetos se suscriban a eventos y sean notificados
+
+
 
 export class Observable {
     constructor() {
         this.observadores = [];
     }
 
-    // Método para agregar un observador
+    
     subscribe(observador) {
-        // Verificar que el observador tenga el método update
+        
         if (typeof observador.update === 'function') {
             this.observadores.push(observador);
             console.log('Observador agregado');
@@ -17,7 +17,7 @@ export class Observable {
         }
     }
 
-    // Método para quitar un observador
+    
     unsubscribe(observador) {
         const index = this.observadores.indexOf(observador);
         if (index > -1) {
@@ -26,7 +26,7 @@ export class Observable {
         }
     }
 
-    // Método para notificar a todos los observadores
+    
     notify(evento, datos) {
         console.log(`Notificando evento: ${evento}`);
         this.observadores.forEach(observador => {
@@ -35,7 +35,7 @@ export class Observable {
     }
 }
 
-// Observador de Estadísticas
+
 export class EstadisticasObserver {
     update(evento, datos) {
         switch (evento) {
@@ -52,7 +52,7 @@ export class EstadisticasObserver {
     }
 
     actualizarEstadisticasLibros() {
-        // Importamos BibliotecaManager aquí para evitar dependencia circular
+        
         import('./BibliotecaManager.js').then(module => {
             const manager = module.BibliotecaManager.getInstance();
             const stats = manager.obtenerEstadisticas();
@@ -79,7 +79,7 @@ export class EstadisticasObserver {
     }
 }
 
-// Observador del Catálogo
+
 export class CatalogoObserver {
     update(evento, datos) {
         switch (evento) {

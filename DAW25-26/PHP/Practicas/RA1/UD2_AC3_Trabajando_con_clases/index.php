@@ -26,11 +26,11 @@ foreach ($actividades as $actividad) {
 echo "Atributos estaticos:";
 echo "<br><br>";
 
-// acceder a los estaticos
+
 echo "Total al inicio: " . Entrenar::getTotalEntrenamientos() . "<br>";
 echo "Ejercicio mínimo: " . Entrenar::getEjercicioMinimo() . "<br>";
 
-// cambiar los estaticos
+
 Entrenar::incrementarTotal();
 
 echo "Después de incrementar: " . Entrenar::getTotalEntrenamientos() . "<br>";

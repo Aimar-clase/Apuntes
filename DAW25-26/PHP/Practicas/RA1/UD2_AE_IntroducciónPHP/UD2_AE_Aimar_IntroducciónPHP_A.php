@@ -1,6 +1,6 @@
 <?php
-// A) Crea un script que determine si un número no es primo y, 
-// además, si precede a otro que sí es primo.
+
+
 $n = 11;
 
 function esPrimo($numero) {

@@ -1,6 +1,6 @@
 'use strict';
 
-// facade
+
 export class DOMFacade {
 
     static getDOMValues() {
